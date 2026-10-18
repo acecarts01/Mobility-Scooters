@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /thank-you-contact/
+Disallow: /thank-you-order/
+Disallow: /thank-you-wholesale/
+Sitemap: https://lifestylemobilityscooters.com.au/sitemap.xml
+
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+# AI crawlers
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+# Agent-readable resources
+# llms.txt: https://lifestylemobilityscooters.com.au/llms.txt
+# API Catalog: https://lifestylemobilityscooters.com.au/.well-known/api-catalog
+# Agent Skills: https://lifestylemobilityscooters.com.au/.well-known/agent-skills/index.json
+# MCP Server Card: https://lifestylemobilityscooters.com.au/.well-known/mcp/server-card.json

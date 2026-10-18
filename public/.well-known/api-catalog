@@ -1,0 +1,48 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://lifestylemobilityscooters.com.au/",
+      "https://www.iana.org/assignments/link-relations/service-doc": [
+        {
+          "href": "https://lifestylemobilityscooters.com.au/faq/"
+        }
+      ],
+      "title": "LIFESTYLE MOBILITY SCOOTERS Australia FAQ"
+    },
+    {
+      "anchor": "https://lifestylemobilityscooters.com.au/shop/",
+      "type": "text/html",
+      "title": "Product Catalog"
+    },
+    {
+      "anchor": "https://lifestylemobilityscooters.com.au/wholesale/",
+      "type": "text/html",
+      "title": "Wholesale & NDIS"
+    },
+    {
+      "anchor": "https://lifestylemobilityscooters.com.au/api/products/",
+      "type": "application/json",
+      "title": "Products API"
+    },
+    {
+      "anchor": "https://lifestylemobilityscooters.com.au/api/categories/",
+      "type": "application/json",
+      "title": "Categories API"
+    },
+    {
+      "anchor": "https://lifestylemobilityscooters.com.au/api/search/",
+      "type": "application/json",
+      "title": "Search API"
+    },
+    {
+      "anchor": "https://lifestylemobilityscooters.com.au/api/mcp/",
+      "type": "application/json",
+      "https://www.iana.org/assignments/link-relations/service-desc": [
+        {
+          "href": "https://lifestylemobilityscooters.com.au/.well-known/mcp/server-card.json"
+        }
+      ],
+      "title": "MCP Server"
+    }
+  ]
+}

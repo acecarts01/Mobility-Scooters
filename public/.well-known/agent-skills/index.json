@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "name": "LIFESTYLE MOBILITY SCOOTERS Australia",
+  "url": "https://lifestylemobilityscooters.com.au",
+  "description": "Mobility Scooters for Sale Australia | Premium Electric Specialists",
+  "skills": [
+    {
+      "name": "search-products",
+      "type": "commerce",
+      "description": "Search mobility scooters by keyword, category, or price",
+      "url": "https://lifestylemobilityscooters.com.au/api/mcp/"
+    },
+    {
+      "name": "browse-catalog",
+      "type": "navigation",
+      "description": "Browse full clinical mobility scooter and accessories catalog",
+      "url": "https://lifestylemobilityscooters.com.au/shop/"
+    },
+    {
+      "name": "order-draft",
+      "type": "commerce",
+      "description": "Create a prefilled order draft. Human completes order via WhatsApp.",
+      "url": "https://lifestylemobilityscooters.com.au/api/mcp/"
+    },
+    {
+      "name": "ndis-guide",
+      "type": "content",
+      "description": "NDIS capital support and assistive technology funding guide",
+      "url": "https://lifestylemobilityscooters.com.au/ndis-guide/"
+    }
+  ]
+}

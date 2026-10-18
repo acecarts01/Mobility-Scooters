@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Inquiry & Clinical Reply Portal | Lifestyle Mobility Australia</title>
+  <meta name="description" content="Official staff response portal for customer inquiries, ARR 204 regulatory advice, NDIS quotes, and GST-free mobility equipment correspondence.">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root {
+      --primary: #007A78;
+      --primary-dark: #005F5D;
+      --primary-light: #E6F2F2;
+      --secondary: #00A896;
+      --charcoal: #1E252B;
+      --charcoal-light: #4A5568;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --border: #E2E8F0;
+      --accent: #F4F1EA;
+      --success: #10B981;
+      --warning: #F59E0B;
+      --danger: #EF4444;
+      --radius: 16px;
+      --shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      min-width: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--charcoal);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+
+    .header-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-badge {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 1.15rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 122, 120, 0.25);
+    }
+
+    .brand-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--charcoal);
+      line-height: 1.1;
+    }
+
+    .brand-subtitle {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .portal-tag {
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .portal-tag .dot {
+      width: 6px;
+      height: 6px;
+      background: var(--success);
+      border-radius: 50%;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      padding: 0.55rem 1rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: #FFFFFF;
+      border-color: var(--border);
+      color: var(--charcoal);
+    }
+
+    .btn-outline:hover {
+      background: var(--bg);
+      border-color: #CBD5E1;
+    }
+
+    .btn-success {
+      background: var(--success);
+      color: #FFFFFF;
+    }
+
+    .btn-success:hover {
+      opacity: 0.9;
+    }
+
+    /* Metrics Bar */
+    .metrics-bar {
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+    }
+
+    .metrics-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .metric-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem 0.75rem;
+      border-right: 1px solid var(--border);
+    }
+
+    .metric-card:last-child {
+      border-right: none;
+    }
+
+    .metric-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      shrink: 0;
+    }
+
+    .metric-val {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--charcoal);
+      line-height: 1.1;
+    }
+
+    .metric-lbl {
+      font-size: 0.72rem;
+      color: var(--charcoal-light);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Main Workspace */
+    .workspace {
+      max-width: 1440px;
+      margin: 1.5rem auto;
+      padding: 0 1.5rem 3rem;
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    @media (max-width: 1024px) {
+      .workspace {
+        grid-template-columns: 1fr;
+      }
+      .metric-card {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.75rem;
+      }
+    }
+
+    /* Left: Ticket Inbox */
+    .inbox-panel {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      max-height: calc(100vh - 170px);
+      position: sticky;
+      top: 90px;
+    }
+
+    .inbox-header {
+      padding: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      background: #FFFFFF;
+    }
+
+    .inbox-title {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--charcoal);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .search-input-wrap {
+      position: relative;
+      margin-bottom: 0.75rem;
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.6rem 0.85rem 0.6rem 2.2rem;
+      font-size: 0.82rem;
+      color: var(--charcoal);
+      outline: none;
+      transition: all 0.15s ease;
+    }
+
+    .search-input:focus {
+      border-color: var(--primary);
+      background: #FFFFFF;
+      box-shadow: 0 0 0 3px rgba(0, 122, 120, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94A3B8;
+      pointer-events: none;
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 0.35rem;
+      overflow-x: auto;
+      padding-bottom: 0.25rem;
+    }
+
+    .tab-btn {
+      padding: 0.3rem 0.65rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #FFFFFF;
+      color: var(--charcoal-light);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .tab-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #FFFFFF;
+    }
+
+    .ticket-list {
+      overflow-y: auto;
+      flex: 1;
+      divide-y: 1px solid var(--border);
+    }
+
+    .ticket-item {
+      padding: 1.1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      position: relative;
+    }
+
+    .ticket-item:hover {
+      background: #F1F5F9;
+    }
+
+    .ticket-item.active {
+      background: var(--primary-light);
+      border-left: 4px solid var(--primary);
+    }
+
+    .ticket-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.35rem;
+    }
+
+    .ticket-id {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: 0.03em;
+    }
+
+    .ticket-time {
+      font-size: 0.68rem;
+      color: #94A3B8;
+      font-weight: 600;
+    }
+
+    .ticket-sender {
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: var(--charcoal);
+      margin-bottom: 0.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .ticket-subject {
+      font-size: 0.78rem;
+      color: var(--charcoal-light);
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 0.45rem;
+    }
+
+    .ticket-tags {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+    }
+
+    .status-badge {
+      font-size: 0.65rem;
+      font-weight: 800;
+      padding: 0.2rem 0.5rem;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .status-new {
+      background: #FEF3C7;
+      color: #92400E;
+    }
+
+    .status-replied {
+      background: #D1FAE5;
+      color: #065F46;
+    }
+
+    .status-progress {
+      background: #E0E7FF;
+      color: #3730A3;
+    }
+
+    .cat-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      background: #E2E8F0;
+      color: #475569;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+    }
+
+    /* Right: Reply Workspace */
+    .workspace-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .panel-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+    }
+
+    .inquiry-details-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .customer-info-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--charcoal);
+    }
+
+    .customer-info-sub {
+      font-size: 0.8rem;
+      color: var(--charcoal-light);
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin-top: 0.25rem;
+      flex-wrap: wrap;
+    }
+
+    .inquiry-quote-box {
+      background: #F8FAFC;
+      border-left: 4px solid var(--primary);
+      border-radius: 0 12px 12px 0;
+      padding: 1rem 1.25rem;
+      font-size: 0.88rem;
+      color: #334155;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .inquiry-quote-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      margin-bottom: 0.35rem;
+    }
+
+    /* Templates Picker */
+    .template-section {
+      margin-bottom: 1.25rem;
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--charcoal);
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .template-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .template-chip {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.45rem 0.85rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: all 0.15s ease;
+    }
+
+    .template-chip:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-1px);
+    }
+
+    .template-chip.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #FFFFFF;
+    }
+
+    /* HTML Composer & Tabs */
+    .composer-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 0.85rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .view-tabs {
+      display: inline-flex;
+      background: var(--bg);
+      padding: 0.25rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .view-tab-btn {
+      padding: 0.35rem 0.85rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      border-radius: 7px;
+      border: none;
+      background: transparent;
+      color: var(--charcoal-light);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .view-tab-btn.active {
+      background: #FFFFFF;
+      color: var(--primary);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    .format-tools {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .tool-btn {
+      width: 32px;
+      height: 32px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      background: #FFFFFF;
+      border-radius: 8px;
+      color: var(--charcoal);
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .tool-btn:hover {
+      background: var(--bg);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .subject-input-wrap {
+      margin-bottom: 0.85rem;
+    }
+
+    .subject-input {
+      width: 100%;
+      padding: 0.65rem 0.85rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .subject-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(0,122,120,0.1);
+    }
+
+    /* Editor / Preview Containers */
+    .editor-view-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .raw-code-editor {
+      width: 100%;
+      min-height: 360px;
+      padding: 1rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      background: #0F172A;
+      color: #E2E8F0;
+      border: 1px solid #1E293B;
+      border-radius: 12px;
+      outline: none;
+      resize: vertical;
+    }
+
+    .email-preview-frame {
+      min-height: 400px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #F1F5F9;
+      padding: 1.5rem;
+      overflow-x: auto;
+    }
+
+    .email-envelope {
+      max-width: 620px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    }
+
+    /* Email Template Inside Styles */
+    .email-header {
+      background: #007A78;
+      color: #FFFFFF;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .email-header h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.25rem;
+    }
+
+    .email-header p {
+      font-size: 0.72rem;
+      opacity: 0.85;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .email-body {
+      padding: 1.75rem;
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: #1E252B;
+    }
+
+    .email-body h3 {
+      font-size: 1.05rem;
+      color: #007A78;
+      margin: 1.25rem 0 0.5rem;
+    }
+
+    .email-body ul {
+      margin: 0.5rem 0 1rem 1.25rem;
+    }
+
+    .email-body li {
+      margin-bottom: 0.4rem;
+    }
+
+    .email-callout {
+      background: #F4F1EA;
+      border-left: 4px solid #007A78;
+      padding: 0.85rem 1.15rem;
+      margin: 1.25rem 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.82rem;
+      color: #1E252B;
+    }
+
+    .email-cta-btn {
+      display: inline-block;
+      background: #007A78;
+      color: #FFFFFF !important;
+      text-decoration: none;
+      padding: 0.75rem 1.4rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin: 1rem 0;
+    }
+
+    .email-signature {
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid #E2E8F0;
+      font-size: 0.8rem;
+      color: #4A5568;
+    }
+
+    .email-signature strong {
+      color: #1E252B;
+    }
+
+    .email-legal-footer {
+      background: #F8FAFC;
+      border-top: 1px solid #E2E8F0;
+      padding: 1rem 1.5rem;
+      font-size: 0.68rem;
+      color: #64748B;
+      line-height: 1.5;
+    }
+
+    /* Actions Footer */
+    .composer-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .left-actions, .right-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #0F172A;
+      color: #FFFFFF;
+      padding: 0.75rem 1.25rem;
+      border-radius: 10px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1000;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header>
+    <div class="header-container">
+      <a href="/" class="brand-wrap">
+        <div class="brand-badge">LS</div>
+        <div>
+          <div class="brand-title">LIFESTYLE MOBILITY AUSTRALIA</div>
+          <div class="brand-subtitle">Butler Trading Pty. Ltd. (Est. 1985)</div>
+        </div>
+      </a>
+
+      <div style="display: flex; align-items: center; gap: 0.85rem;">
+        <span class="portal-tag">
+          <span class="dot"></span>
+          Clinical Reply Portal (HTML Live)
+        </span>
+        <a href="/shop/" class="btn btn-outline">Shop Catalog</a>
+        <a href="/contact/" class="btn btn-outline">Public Inquiries</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Metrics Summary Bar -->
+  <div class="metrics-bar">
+    <div class="metrics-container">
+      <div class="metric-card">
+        <div class="metric-icon" style="background: var(--primary-light); color: var(--primary);">📥</div>
+        <div>
+          <div class="metric-val" id="stat-total">6</div>
+          <div class="metric-lbl">Total Inquiries</div>
+        </div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon" style="background: #FEF3C7; color: #92400E;">⏳</div>
+        <div>
+          <div class="metric-val" id="stat-pending">3</div>
+          <div class="metric-lbl">Awaiting Reply</div>
+        </div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon" style="background: #D1FAE5; color: #065F46;">⚡</div>
+        <div>
+          <div class="metric-val">1.2h</div>
+          <div class="metric-lbl">Avg Response Time</div>
+        </div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon" style="background: #E0E7FF; color: #3730A3;">⚖️</div>
+        <div>
+          <div class="metric-val">100%</div>
+          <div class="metric-lbl">ARR 204 Compliance</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Workspace Container -->
+  <main class="workspace">
+    <!-- Left: Ticket Inbox -->
+    <section class="inbox-panel">
+      <div class="inbox-header">
+        <div class="inbox-title">
+          <span>Customer Queue</span>
+          <span style="font-size: 0.72rem; color: var(--primary); font-weight: 700;" id="inbox-count">6 Messages</span>
+        </div>
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input 
+            type="text" 
+            id="ticket-search" 
+            class="search-input" 
+            placeholder="Search inquiries (name, email, topic)..."
+            oninput="handleSearch(this.value)"
+          >
+        </div>
+        <div class="filter-tabs">
+          <button class="tab-btn active" onclick="filterStatus('all', this)">All (6)</button>
+          <button class="tab-btn" onclick="filterStatus('new', this)">New (3)</button>
+          <button class="tab-btn" onclick="filterStatus('in_progress', this)">In Progress (1)</button>
+          <button class="tab-btn" onclick="filterStatus('replied', this)">Replied (2)</button>
+        </div>
+      </div>
+
+      <div class="ticket-list" id="ticket-list-container">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Right: Reply & Composition Workspace -->
+    <section class="workspace-panel">
+      <!-- Active Ticket Details -->
+      <div class="panel-card">
+        <div class="inquiry-details-header">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+              <span id="active-id" class="ticket-id" style="font-size: 0.85rem;">LS-INQ-4091</span>
+              <span id="active-status" class="status-badge status-new">NEW INQUIRY</span>
+              <span id="active-cat" class="cat-badge">Regulations</span>
+            </div>
+            <h1 id="active-name" class="customer-info-name">Margaret Higgins</h1>
+            <div class="customer-info-sub">
+              <span>📧 <strong id="active-email">margaret.higgins@optusnet.com.au</strong></span>
+              <span>📞 <strong id="active-phone">0412 884 921</strong></span>
+              <span>📍 <strong id="active-loc">Adelaide, SA</strong></span>
+              <span>📅 <strong id="active-date">Today at 10:42 AM</strong></span>
+            </div>
+          </div>
+          <div>
+            <select id="status-updater" onchange="updateTicketStatus(this.value)" style="padding: 0.45rem 0.75rem; border-radius: 8px; border: 1px solid var(--border); font-size: 0.78rem; font-weight: 700; background: #FFFFFF; color: var(--charcoal); cursor: pointer;">
+              <option value="new">Status: New</option>
+              <option value="in_progress">Status: In Progress</option>
+              <option value="replied">Status: Replied</option>
+              <option value="resolved">Status: Resolved</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="inquiry-quote-label">Customer's Original Message</div>
+        <div id="active-message" class="inquiry-quote-box">
+          &ldquo;Hello, I am 74 and live in Victor Harbor. My GP suggested I look into a mobility scooter to visit the local shops. Do I need to sit for a driving test or register the scooter with Service SA? Also, what happens on footpaths versus the roadside? Thank you.&rdquo;
+        </div>
+
+        <!-- RESPONSE TONE TOGGLE DROPDOWN -->
+        <div style="background: #F8FAFC; border: 1px solid var(--border); border-radius: 12px; padding: 0.85rem 1.25rem; margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+          <div style="display: flex; align-items: center; gap: 0.65rem;">
+            <span style="font-size: 1.15rem;">🎛️</span>
+            <div>
+              <span style="font-size: 0.82rem; font-weight: 800; color: var(--charcoal); display: block;">Response Tone Modifier</span>
+              <span id="tone-desc" style="font-size: 0.72rem; color: var(--charcoal-light);">Statutory accuracy, Australian Road Rule 204 citations & legal precision</span>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <label for="tone-selector" style="font-size: 0.72rem; font-weight: 700; color: var(--charcoal-light); text-transform: uppercase;">Tone:</label>
+            <select id="tone-selector" onchange="handleToneChange(this.value)" style="padding: 0.45rem 0.85rem; border-radius: 8px; border: 2px solid rgba(0, 122, 120, 0.2); font-size: 0.8rem; font-weight: 800; background: #FFFFFF; color: var(--charcoal); cursor: pointer;">
+              <option value="Formal/Clinical">Formal / Clinical</option>
+              <option value="Empathetic/Care">Empathetic / Care</option>
+              <option value="Direct/Support">Direct / Support</option>
+            </select>
+            <span id="tone-badge" class="cat-badge" style="background: var(--primary-light); color: var(--primary); font-weight: 800; font-size: 0.7rem; padding: 0.25rem 0.65rem;">FORMAL/CLINICAL</span>
+          </div>
+        </div>
+
+        <!-- Clinical Template Picker -->
+        <div class="template-section">
+          <div class="section-label">⚡ Pre-Approved Response Templates (<span id="active-tone-label">Formal/Clinical</span>)</div>
+          <div class="template-chips" id="template-chips-container">
+            <button class="template-chip active" id="chip-arr204" onclick="applyTemplate('arr204')">
+              📜 ARR 204 Footpath Legal Exemption
+            </button>
+            <button class="template-chip" id="chip-gst_free" onclick="applyTemplate('gst_free')">
+              📑 Section 38-45 GST-Free Exemption
+            </button>
+            <button class="template-chip" id="chip-ndis" onclick="applyTemplate('ndis')">
+              🛡️ NDIS Category 05 Assistive Tech Quote
+            </button>
+            <button class="template-chip" id="chip-airline" onclick="applyTemplate('airline')">
+              ✈️ CASA/IATA Airline Travel Certificate
+            </button>
+            <button class="template-chip" id="chip-shipping" onclick="applyTemplate('shipping')">
+              🚚 National Metro Freight & Unboxing
+            </button>
+            <button class="template-chip" id="chip-wholesale" onclick="applyTemplate('wholesale')">
+              🏢 B2B Commercial Account Activation
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Composer & HTML Live Preview Card -->
+      <div class="panel-card">
+        <div class="composer-toolbar">
+          <div class="view-tabs">
+            <button id="tab-preview" class="view-tab-btn active" onclick="switchView('preview')">👁️ Live HTML Preview</button>
+            <button id="tab-code" class="view-tab-btn" onclick="switchView('code')">&lt;/&gt; Raw HTML Code</button>
+            <button id="tab-split" class="view-tab-btn" onclick="switchView('split')">🔀 Split View</button>
+          </div>
+
+          <div class="format-tools" id="editor-tools">
+            <button class="tool-btn" title="Bold" onclick="wrapCode('<strong>', '</strong>')">B</button>
+            <button class="tool-btn" title="Italic" onclick="wrapCode('<em>', '</em>')">I</button>
+            <button class="tool-btn" title="Subheading" onclick="wrapCode('<h3>', '</h3>')">H3</button>
+            <button class="tool-btn" title="Callout Box" onclick="wrapCode('<div class=\'email-callout\'>', '</div>')">Box</button>
+            <button class="tool-btn" title="Insert Product CTA" onclick="insertCTA()">CTA</button>
+          </div>
+        </div>
+
+        <div class="subject-input-wrap">
+          <label style="font-size: 0.72rem; font-weight: 700; color: var(--charcoal-light); text-transform: uppercase; margin-bottom: 0.25rem; display: block;">
+            Email Subject Line
+          </label>
+          <input 
+            type="text" 
+            id="reply-subject" 
+            class="subject-input" 
+            value="Lifestyle Mobility Australia: Re: Footpath Regulations & Driver Licence Query"
+          >
+        </div>
+
+        <!-- Editor & Preview Views -->
+        <div id="view-container" class="editor-view-container">
+          <!-- Live Preview -->
+          <div id="preview-panel" class="email-preview-frame">
+            <div class="email-envelope" id="email-envelope-render">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Raw HTML Code Editor -->
+          <div id="code-panel" style="display: none;">
+            <textarea 
+              id="raw-html-editor" 
+              class="raw-code-editor" 
+              oninput="syncPreviewFromCode()"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- Footer Actions -->
+        <div class="composer-footer">
+          <div class="left-actions">
+            <button class="btn btn-outline" onclick="copyHtmlCode()">
+              📋 Copy HTML Code
+            </button>
+            <button class="btn btn-outline" onclick="downloadHtmlFile()">
+              💾 Download .html
+            </button>
+            <button class="btn btn-outline" onclick="sendViaMailto()">
+              ✉️ Open in Mail Client
+            </button>
+          </div>
+
+          <div class="right-actions">
+            <button class="btn btn-success" onclick="sendViaWhatsApp()">
+              💬 Reply via WhatsApp
+            </button>
+            <button class="btn btn-primary" onclick="markAsSent()">
+              ✅ Save & Mark Replied
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <span id="toast-icon">✅</span>
+    <span id="toast-msg">HTML email copied to clipboard!</span>
+  </div>
+
+  <script>
+    // Inquiries Database (Australian Clinical Scenarios)
+    const INQUIRIES = [
+      {
+        id: "LS-INQ-4091",
+        name: "Margaret Higgins",
+        email: "margaret.higgins@optusnet.com.au",
+        phone: "0412 884 921",
+        location: "Victor Harbor, SA",
+        category: "Regulations",
+        date: "Today at 10:42 AM",
+        status: "new",
+        subject: "Re: Footpath Regulations & Driver Licence Query",
+        message: "Hello, I am 74 and live in Victor Harbor. My GP suggested I look into a mobility scooter to visit the local shops. Do I need to sit for a driving test or register the scooter with Service SA? Also, what happens on footpaths versus the roadside? Thank you.",
+        defaultTemplate: "arr204"
+      },
+      {
+        id: "LS-INQ-4092",
+        name: "David K. Thornton",
+        email: "david.thornton@bigpond.com",
+        phone: "0403 719 443",
+        location: "Brisbane, QLD",
+        category: "NDIS Funding",
+        date: "Today at 09:15 AM",
+        status: "new",
+        subject: "NDIS Quote Request for Outback All-Terrain Scooter",
+        message: "Hi there. I am an NDIS self-managed participant (Category 05 - Assistive Technology). My occupational therapist has completed my clinical functional assessment. Could you provide a formal written tax quote for the Outback 800W Cruiser with sun canopy and rear lock-box? Thank you.",
+        defaultTemplate: "ndis"
+      },
+      {
+        id: "LS-INQ-4093",
+        name: "Beverley Watson",
+        email: "b.watson48@gmail.com",
+        phone: "0418 223 904",
+        location: "Melbourne, VIC",
+        category: "Travel & Flight",
+        date: "Yesterday at 04:30 PM",
+        status: "new",
+        subject: "Qantas Airline Compliance for AeroFold Scooter",
+        message: "We are booked on a Qantas flight from Melbourne to Perth next month. Can you confirm if the AeroFold Lithium battery complies with CASA and IATA regulations for carry-on? Do you provide a UN 38.3 test certificate I can show check-in staff?",
+        defaultTemplate: "airline"
+      },
+      {
+        id: "LS-INQ-4089",
+        name: "Peter Callanan",
+        email: "peter@southernpharmacy.com.au",
+        phone: "08 8272 1199",
+        location: "Mitcham, SA",
+        category: "Wholesale",
+        date: "Yesterday at 01:10 PM",
+        status: "in_progress",
+        subject: "Wholesale Pharmacy Supply Agreement",
+        message: "Good day, I manage an independent community pharmacy in Mitcham. We have clients requesting lightweight travel folding scooters. How do we open a B2B trade account with Butler Trading, and what is your consignment or floor stock margin schedule?",
+        defaultTemplate: "wholesale"
+      },
+      {
+        id: "LS-INQ-4085",
+        name: "Graham & Joan Miller",
+        email: "g.miller@westnet.com.au",
+        phone: "0429 801 352",
+        location: "Ballarat, VIC",
+        category: "Tax & GST",
+        date: "16 Oct 2024",
+        status: "replied",
+        subject: "GST Exemption Certificate Confirmation",
+        message: "My accountant requested confirmation that the MetroGlide 4-wheel scooter we ordered is completely exempt from GST. Could you please provide the statutory reference for our tax records?",
+        defaultTemplate: "gst_free"
+      },
+      {
+        id: "LS-INQ-4081",
+        name: "Sister Mary Teresa",
+        email: "admin@stjosephcare.org.au",
+        phone: "02 9820 4000",
+        location: "Liverpool, NSW",
+        category: "Shipping",
+        date: "15 Oct 2024",
+        status: "replied",
+        subject: "Delivery logistics to Aged Care facility",
+        message: "Can heavy duty scooters be delivered directly into our facility's maintenance loading bay with tailgate unboxing? We require driver notification 30 minutes prior to arrival.",
+        defaultTemplate: "shipping"
+      }
+    ];
+
+    // Templates Library with 3 Response Tones: 'Formal/Clinical', 'Empathetic/Care', 'Direct/Support'
+    const TEMPLATES = {
+      arr204: {
+        label: "ARR 204 Footpath Legal Exemption",
+        tones: {
+          'Formal/Clinical': {
+            subject: "Lifestyle Mobility Australia: Australian Road Rule 204 Regulatory Guidance",
+            html: `
+<p>Dear {CUSTOMER_NAME},</p>
+<p>Thank you for contacting Lifestyle Mobility Australia regarding mobility scooter legal requirements and footpath regulations.</p>
+
+<div class="email-callout">
+  <strong>Statutory Summary (Australian Road Rule 204):</strong><br>
+  Under Australian Road Rule 204, an electric mobility scooter governed to a maximum design speed not exceeding <strong>10 km/h</strong> on level ground is legally classified as a <strong>pedestrian device</strong>.
+</div>
+
+<h3>Key Regulations for South Australia & Nationwide:</h3>
+<ul>
+  <li><strong>No Driver Licence Required:</strong> You do not need a driver licence, learner permit, or medical driving assessment to operate a 10 km/h mobility scooter.</li>
+  <li><strong>Zero Registration Fees:</strong> In South Australia, Victoria, NSW, WA, and TAS, mobility scooters do not require vehicle registration or CTP insurance.</li>
+  <li><strong>Footpath Priority:</strong> You have the legal right-of-way as a pedestrian on all footpaths, shared pedestrian paths, nature strips, and inside shopping precincts.</li>
+  <li><strong>Road Usage Rules:</strong> You may only operate on the road when a footpath is unavailable, obstructed, or unsafe. You must keep to the far side of the road and obey all standard pedestrian crossing signals.</li>
+</ul>
+
+<p>Every scooter supplied by Butler Trading Pty. Ltd. is factory speed-governed to 10 km/h, ensuring 100% legal compliance from your first day of travel.</p>
+
+<p>Would you like us to arrange a safe, obligation-free demonstration of our popular folding or mid-size models?</p>
+
+<a href="https://lifestylemobilityscooters.com.au/shop/" class="email-cta-btn">View ARR 204 Compliant Scooters</a>
+`
+          },
+          'Empathetic/Care': {
+            subject: "Re: Your Mobility Scooter Questions – You are in Safe Hands with Lifestyle Mobility",
+            html: `
+<p>Hello {CUSTOMER_NAME},</p>
+<p>Thank you so much for reaching out to our team today. We know that looking into a mobility scooter is an important decision, and it is completely normal to have questions about safety, licences, and road rules.</p>
+
+<div class="email-callout" style="border-left-color: #E11D48; background-color: #FDF2F4;">
+  <strong>Peace of Mind Guarantee:</strong><br>
+  Please rest easy: <strong>you will never need to sit for a driving test, visit a licensing centre, or pay vehicle registration</strong>.
+</div>
+
+<p>Under Australian Road Rule 204, because all our scooters are carefully speed-governed to a gentle 10 km/h, you have the exact same rights and protections as someone walking on the footpath. You can enjoy your local shops, parks, and visiting friends with complete confidence and dignity.</p>
+
+<h3>What this means for your daily comfort:</h3>
+<ul>
+  <li><strong>No Stressful Exams:</strong> No driving licence or medical driving tests required.</li>
+  <li><strong>100% Pedestrian Rights:</strong> Ride smoothly across footpaths, shopping malls, and community centres.</li>
+  <li><strong>Gentle Learning Curve:</strong> Intuitive steering with automatic safety electromagnetic braking when you release the throttle.</li>
+</ul>
+
+<p>We are here to support you at your own pace. If you would like to chat or have any questions, our friendly team is always just a phone call away.</p>
+
+<a href="https://lifestylemobilityscooters.com.au/shop/portable-folding/" class="email-cta-btn">Explore Gentle Everyday Scooters</a>
+`
+          },
+          'Direct/Support': {
+            subject: "Quick Summary: Australian Mobility Scooter Licencing & Footpath Rules",
+            html: `
+<p>Hi {CUSTOMER_NAME},</p>
+<p>Here is the direct regulatory summary regarding mobility scooter operation in Australia:</p>
+
+<div class="email-callout" style="border-left-color: #2563EB; background-color: #EFF6FF;">
+  <strong>Rule Summary (ARR 204):</strong> 10 km/h scooters are classified as <strong>pedestrian equipment</strong> nationwide.
+</div>
+
+<ul>
+  <li><strong>Licence:</strong> NOT required. No test, permit, or doctor sign-off required.</li>
+  <li><strong>Registration:</strong> $0 / Not required across SA, VIC, NSW, WA, and TAS.</li>
+  <li><strong>Pathways:</strong> Full legal pedestrian right-of-way on all footpaths and indoor retail centres.</li>
+  <li><strong>Roadways:</strong> Permitted only where footpath is impassable (ride on far left margin).</li>
+  <li><strong>Speed:</strong> Factory governed to 10 km/h max legal limit.</li>
+</ul>
+
+<p>All Lifestyle Mobility vehicles are ARR 204 certified for immediate dispatch from our Adelaide central warehouse.</p>
+
+<a href="https://lifestylemobilityscooters.com.au/shop/" class="email-cta-btn">View ARR 204 Stock & Pricing</a>
+`
+          }
+        }
+      },
+
+      gst_free: {
+        label: "Section 38-45 GST-Free Exemption",
+        tones: {
+          'Formal/Clinical': {
+            subject: "Lifestyle Mobility Australia: 100% GST-Free Medical Exemption Certification",
+            html: `
+<p>Dear {CUSTOMER_NAME},</p>
+<p>Thank you for your inquiry regarding the Goods and Services Tax (GST) status of our mobility equipment.</p>
+
+<div class="email-callout">
+  <strong>Statutory Exemption Reference:</strong><br>
+  All motorised mobility scooters, electric powerchairs, and assistive ramps supplied by Lifestyle Mobility Australia (Butler Trading Pty. Ltd. ABN 84 008 071 323) are <strong>100% GST-Free</strong> under <strong>Section 38-45 of the A New Tax System (Goods and Services Tax) Act 1999 (Schedule 3)</strong>.
+</div>
+
+<h3>Compliance Particulars:</h3>
+<ul>
+  <li>Medical assistive equipment specifically manufactured for individuals with mobility restrictions is zero-rated for GST.</li>
+  <li>No GST is added to any retail or wholesale tax invoice.</li>
+  <li>Your tax invoice will state: <em>"Item is GST-free under Section 38-45 of the GST Act 1999"</em> for ATO and accountant reconciliation.</li>
+</ul>
+
+<p>Please find your itemised quote and statutory declaration attached for your records.</p>
+
+<a href="https://lifestylemobilityscooters.com.au/contact/" class="email-cta-btn">Request Formal Itemised Quote</a>
+`
+          },
+          'Empathetic/Care': {
+            subject: "Good News Regarding Your Mobility Equipment: 100% GST-Free Savings",
+            html: `
+<p>Hello {CUSTOMER_NAME},</p>
+<p>We are delighted to bring you some very welcome news regarding your mobility equipment purchase.</p>
+
+<div class="email-callout" style="border-left-color: #E11D48; background-color: #FDF2F4;">
+  <strong>100% Tax-Free Medical Support:</strong><br>
+  Because Australian law recognizes mobility scooters as essential medical aids, <strong>you will not be charged a single cent in GST</strong>.
+</div>
+
+<p>We understand that living expenses and medical aids require careful budgeting. The entire 10% GST is legally removed from your purchase, keeping quality mobility as affordable and stress-free as possible.</p>
+
+<p>Your official tax receipt will include the full statutory certificate so your accountant or family bookkeeper has everything they need without any paperwork hassles.</p>
+
+<a href="https://lifestylemobilityscooters.com.au/shop/" class="email-cta-btn">Browse GST-Free Mobility Range</a>
+`
+          },
+          'Direct/Support': {
+            subject: "Tax Status: 0% GST Confirmed (Section 38-45 GST Act)",
+            html: `
+<p>Hi {CUSTOMER_NAME},</p>
+<p>Confirmed: All Lifestyle Mobility scooters and ramps are zero-rated for GST.</p>
+
+<div class="email-callout" style="border-left-color: #2563EB; background-color: #EFF6FF;">
+  <strong>Statutory Exemption:</strong> Section 38-45, GST Act 1999 (Schedule 3 - Medical Assistive Technology).
+</div>
+
+<ul>
+  <li><strong>GST Charged:</strong> $0.00 (0%).</li>
+  <li><strong>Invoice Notation:</strong> Formal statutory reference included on all tax invoices.</li>
+  <li><strong>ATO Compliance:</strong> Validated for personal tax records and business deductions.</li>
+</ul>
+
+<a href="https://lifestylemobilityscooters.com.au/contact/" class="email-cta-btn">Download Tax Exemption Invoice</a>
+`
+          }
+        }
+      },
+
+      ndis: {
+        label: "NDIS Category 05 Quote",
+        tones: {
+          'Formal/Clinical': {
+            subject: "Lifestyle Mobility Australia: NDIS Assistive Technology (Category 05) Written Quote",
+            html: `
+<p>Dear {CUSTOMER_NAME},</p>
+<p>Thank you for reaching out regarding NDIS support for your assistive mobility equipment.</p>
+
+<div class="email-callout">
+  <strong>NDIS Capital Supports (Category 05 - Assistive Technology):</strong><br>
+  Lifestyle Mobility Australia assists <strong>Self-Managed</strong> and <strong>Plan-Managed</strong> NDIS participants across all Australian states and territories.
+</div>
+
+<h3>What We Provide for Your Plan Manager / OT Assessment:</h3>
+<ul>
+  <li><strong>Formal Written Quote:</strong> Product specifications, SWL safe working load ratings, and warranty guarantees.</li>
+  <li><strong>TGA Regulatory Compliance:</strong> Verification of therapeutic goods compliance and speed-governed safety parameters.</li>
+  <li><strong>Itemised Line Item Coding:</strong> Formatted specifically for NDIS portal claim submission.</li>
+  <li><strong>Direct Invoicing:</strong> We invoice your Plan Manager directly upon authorization, requiring zero out-of-pocket payment from you.</li>
+</ul>
+
+<p>Our clinical liaison desk is available to speak with your Occupational Therapist to supply equipment trial verification documents.</p>
+
+<a href="https://lifestylemobilityscooters.com.au/contact/" class="email-cta-btn">Contact NDIS Support Liaison</a>
+`
+          },
+          'Empathetic/Care': {
+            subject: "We're Here to Support You with Your NDIS Mobility Journey",
+            html: `
+<p>Hello {CUSTOMER_NAME},</p>
+<p>Navigating the NDIS can sometimes feel complicated and overwhelming, but we want you to know that <strong>we are right here by your side</strong> to make this process as easy and gentle as possible.</p>
+
+<div class="email-callout" style="border-left-color: #E11D48; background-color: #FDF2F4;">
+  <strong>Zero Out-of-Pocket Stress:</strong><br>
+  We work directly with your Plan Manager and Occupational Therapist so you won't have to worry about complicated paperwork or upfront costs.
+</div>
+
+<p>Whether you need formal written quotes, trial verification letters for your OT, or specific weight capacity documentation, our caring NDIS coordinator will prepare everything promptly.</p>
+
+<p>Please give us a call whenever you are ready, and we will take care of the details together.</p>
+
+<a href="https://lifestylemobilityscooters.com.au/contact/" class="email-cta-btn">Request Gentle NDIS Assistance</a>
+`
+          },
+          'Direct/Support': {
+            subject: "NDIS Category 05 Quote & Fast-Track Claim Details",
+            html: `
+<p>Hi {CUSTOMER_NAME},</p>
+<p>Here are your NDIS Category 05 (Assistive Technology) claim details:</p>
+
+<div class="email-callout" style="border-left-color: #2563EB; background-color: #EFF6FF;">
+  <strong>Support Category:</strong> 05_AssistiveTechnology_CapitalSupports
+</div>
+
+<ul>
+  <li><strong>Supplier Name:</strong> Butler Trading Pty. Ltd. (ABN: 84 008 071 323).</li>
+  <li><strong>Billing Method:</strong> Direct invoicing to Plan Manager via email or instant receipt for Self-Managed portal claim.</li>
+  <li><strong>Clinical Inclusions:</strong> Full SWL weight rating certification, battery compliance, 3-year structural chassis warranty.</li>
+  <li><strong>Turnaround:</strong> Immediate dispatch upon plan fund approval.</li>
+</ul>
+
+<a href="https://lifestylemobilityscooters.com.au/contact/" class="email-cta-btn">Generate NDIS Tax Invoice</a>
+`
+          }
+        }
+      },
+
+      airline: {
+        label: "CASA/IATA Airline Travel Pack",
+        tones: {
+          'Formal/Clinical': {
+            subject: "Lifestyle Mobility Australia: CASA & IATA Lithium Battery Flight Transit Clearance",
+            html: `
+<p>Dear {CUSTOMER_NAME},</p>
+<p>Thank you for checking airline flight clearance requirements for your travel mobility scooter.</p>
+
+<div class="email-callout">
+  <strong>CASA / IATA Dangerous Goods Guidelines:</strong><br>
+  Our portable travel scooters (including the AeroFold and TravelLite series) utilize certified <strong>UN 38.3 Lithium LiFePO4 battery packs</strong> engineered specifically for commercial air travel compliance.
+</div>
+
+<h3>Airline Check-In Instructions:</h3>
+<ul>
+  <li><strong>Battery Watt-Hour Rating:</strong> Rated under 300Wh (or dual 160Wh packs), strictly complying with airline carry-on allowances.</li>
+  <li><strong>Removal:</strong> The lithium battery is removed via the quick-release lock and carried into the passenger cabin.</li>
+  <li><strong>Chassis Checked as Medical Aid:</strong> Airlines carry your folded scooter chassis in the cargo hold free of charge as essential medical equipment.</li>
+  <li><strong>UN 38.3 Certificate:</strong> Please present the attached UN 38.3 Material Safety Data Sheet (MSDS) at the oversized baggage check-in desk.</li>
+</ul>
+
+<p>We wish you a safe and independent holiday journey!</p>
+
+<a href="https://lifestylemobilityscooters.com.au/shop/portable-folding/" class="email-cta-btn">View Airline Certified Travel Models</a>
+`
+          },
+          'Empathetic/Care': {
+            subject: "Wishing You Safe Travels: Your Easy Airline Flying Guide",
+            html: `
+<p>Hello {CUSTOMER_NAME},</p>
+<p>How exciting that you are travelling! Holidays and visiting family are such precious times, and we want to ensure your journey through the airport is completely smooth, enjoyable, and free of stress.</p>
+
+<div class="email-callout" style="border-left-color: #E11D48; background-color: #FDF2F4;">
+  <strong>Hassle-Free Airport Travel:</strong><br>
+  All major airlines (Qantas, Virgin, Jetstar) have clear guidelines that welcome your folding travel scooter as an essential medical aid.
+</div>
+
+<p>Simply take your lightweight battery into the passenger cabin with your carry-on bag, and the airline ground staff will take care of loading your folded scooter frame safely at the boarding gate.</p>
+
+<p>Please print the certificate we have prepared for you, show it with a smile at the counter, and have a wonderful, relaxing holiday!</p>
+
+<a href="https://lifestylemobilityscooters.com.au/shop/portable-folding/" class="email-cta-btn">View Airline-Friendly Models</a>
+`
+          },
+          'Direct/Support': {
+            subject: "Airline Battery Clearance Checklist: UN 38.3 Certified",
+            html: `
+<p>Hi {CUSTOMER_NAME},</p>
+<p>Here is your airport clearance checklist for commercial flights across Australia:</p>
+
+<div class="email-callout" style="border-left-color: #2563EB; background-color: #EFF6FF;">
+  <strong>CASA / IATA Status:</strong> UN 38.3 Certified (< 300Wh lithium pack). Fully compliant.
+</div>
+
+<ul>
+  <li><strong>Step 1:</strong> Notify airline mobility desk 48 hours prior to departure.</li>
+  <li><strong>Step 2:</strong> Detach lithium battery pack at oversized baggage and carry into aircraft cabin.</li>
+  <li><strong>Step 3:</strong> Present attached UN 38.3 MSDS test sheet if requested.</li>
+  <li><strong>Step 4:</strong> Scooter chassis checked into cargo hold at $0 fee as assistive medical device.</li>
+</ul>
+
+<a href="https://lifestylemobilityscooters.com.au/shop/portable-folding/" class="email-cta-btn">Download UN 38.3 Test Report</a>
+`
+          }
+        }
+      },
+
+      shipping: {
+        label: "National Freight & Unboxing",
+        tones: {
+          'Formal/Clinical': {
+            subject: "Lifestyle Mobility Australia: National Metro Logistics & Unboxing Dispatch Details",
+            html: `
+<p>Dear {CUSTOMER_NAME},</p>
+<p>Thank you for inquiring about our national delivery and logistics services.</p>
+
+<div class="email-callout">
+  <strong>Nationwide Specialized Tail-Lift Delivery:</strong><br>
+  We transport all equipment via specialized tail-lift logistics partners across Adelaide, Melbourne, Sydney, Brisbane, Perth, and regional hubs.
+</div>
+
+<h3>Delivery Protocol:</h3>
+<ul>
+  <li><strong>Transit Insurance:</strong> All shipments include 100% comprehensive transit insurance from our South Australian central depot.</li>
+  <li><strong>Pre-Delivery Call:</strong> The carrier driver will phone you 30 to 60 minutes prior to arrival to confirm access.</li>
+  <li><strong>Packaging & Assembly:</strong> Portable folding units arrive fully assembled in protective travel cartons. Pavement cruisers arrive 95% assembled on secure wooden pallets.</li>
+  <li><strong>White-Glove Service:</strong> Available in metro zones for complete uncrating, battery connection, and packing material disposal.</li>
+</ul>
+
+<p>Your consignment tracking number will be SMS-alerted as soon as your dispatch manifest is scanned.</p>
+
+<a href="https://lifestylemobilityscooters.com.au/tracking/" class="email-cta-btn">Track Order Dispatch Online</a>
+`
+          },
+          'Empathetic/Care': {
+            subject: "Your Scooter is On Its Way: Relax, We Handle All the Heavy Lifting",
+            html: `
+<p>Hello {CUSTOMER_NAME},</p>
+<p>We want to reassure you that when your new scooter arrives, <strong>you will not have to lift a finger or worry about heavy boxes</strong>.</p>
+
+<div class="email-callout" style="border-left-color: #E11D48; background-color: #FDF2F4;">
+  <strong>Careful Delivery Promise:</strong><br>
+  Our friendly logistics driver will phone you 30 to 60 minutes beforehand so you have plenty of time to get ready without rushing.
+</div>
+
+<p>Travel scooters arrive pre-assembled—simply unfold the frame and you are ready to ride. For our larger cruisers, our white-glove team can wheel the unit gently onto your driveway or porch, unbox it safely, and take all the cardboard packaging away with them.</p>
+
+<p>If you or your family need anything at all during delivery day, please call our direct hotline and we will be delighted to assist.</p>
+
+<a href="https://lifestylemobilityscooters.com.au/tracking/" class="email-cta-btn">Track Your Delivery Progress</a>
+`
+          },
+          'Direct/Support': {
+            subject: "Dispatch Notice & Freight Tracking Information",
+            html: `
+<p>Hi {CUSTOMER_NAME},</p>
+<p>Logistics briefing for your mobility equipment dispatch:</p>
+
+<div class="email-callout" style="border-left-color: #2563EB; background-color: #EFF6FF;">
+  <strong>Dispatch Status:</strong> South Australian Central Warehouse. Specialized tail-lift freight.
+</div>
+
+<ul>
+  <li><strong>Transit Time:</strong> Metro 2–4 business days. Regional 4–6 business days.</li>
+  <li><strong>Driver Notice:</strong> SMS & phone call 30–60 minutes prior to delivery.</li>
+  <li><strong>Insurance:</strong> 100% full replacement transit insurance included.</li>
+  <li><strong>Support Line:</strong> 1800 703 244 (Toll-Free, 9am–5pm ACST).</li>
+</ul>
+
+<a href="https://lifestylemobilityscooters.com.au/tracking/" class="email-cta-btn">View Real-Time Tracking Portal</a>
+`
+          }
+        }
+      },
+
+      wholesale: {
+        label: "B2B Commercial Account",
+        tones: {
+          'Formal/Clinical': {
+            subject: "Lifestyle Mobility Australia: B2B Commercial Account & Wholesale Schedule",
+            html: `
+<p>Dear {CUSTOMER_NAME},</p>
+<p>Thank you for your interest in partnering with Butler Trading Pty. Ltd. (Est. 1985) as an authorized retail distributor or pharmacy provider.</p>
+
+<div class="email-callout">
+  <strong>Commercial Trade Terms & Advantages:</strong><br>
+  We supply over 260 medical facilities, pharmacies, and mobility showrooms across Australia with factory-direct margins, national parts availability, and South Australian technical support.
+</div>
+
+<h3>Wholesale Account Benefits:</h3>
+<ul>
+  <li><strong>Tiered Margin Structure:</strong> Generous dealer margins on travel, mid-size, and all-terrain models.</li>
+  <li><strong>Zero MOQ for Display Stock:</strong> Order single demonstration floor units with full dealer discount.</li>
+  <li><strong>3-Year Chassis Warranty:</strong> Fully backed by our Adelaide parts depot and mobile support team.</li>
+  <li><strong>Point-of-Sale Collateral:</strong> High-resolution printed brochures, clinical comparison cards, and digital catalog assets.</li>
+</ul>
+
+<p>Please find our B2B dealer application form attached. Once returned, your wholesale portal login will be activated within 24 hours.</p>
+
+<a href="https://lifestylemobilityscooters.com.au/wholesale/" class="email-cta-btn">Submit B2B Dealer Application</a>
+`
+          },
+          'Empathetic/Care': {
+            subject: "Welcome to Our Provider Family: Caring for Australian Mobility Together",
+            html: `
+<p>Hello {CUSTOMER_NAME},</p>
+<p>Thank you warmly for reaching out to us. For nearly 40 years, Butler Trading has believed that quality assistive technology should empower local communities and enrich lives with safety and freedom.</p>
+
+<div class="email-callout" style="border-left-color: #E11D48; background-color: #FDF2F4;">
+  <strong>Patient-Centred Partnership:</strong><br>
+  We look forward to helping you provide reliable, trustworthy mobility solutions that give your patients and local customers genuine independence.
+</div>
+
+<p>Our Adelaide team is always here to support your clinical staff with training, demonstration floor models, and rapid spare parts dispatch so you can care for your clients without delay.</p>
+
+<p>We are delighted to welcome you to our family of healthcare providers.</p>
+
+<a href="https://lifestylemobilityscooters.com.au/wholesale/" class="email-cta-btn">Start Your Community Partnership</a>
+`
+          },
+          'Direct/Support': {
+            subject: "Wholesale Margin Schedule & Trade Account Fast-Track",
+            html: `
+<p>Hi {CUSTOMER_NAME},</p>
+<p>Commercial dealer breakdown for Butler Trading Pty. Ltd.:</p>
+
+<div class="email-callout" style="border-left-color: #2563EB; background-color: #EFF6FF;">
+  <strong>B2B Account Terms:</strong> 30-day commercial terms upon credit review. Immediate dealer pricing.
+</div>
+
+<ul>
+  <li><strong>Margins:</strong> Competitive dealer margins across Folding, Mid-Size, and All-Terrain categories.</li>
+  <li><strong>MOQ:</strong> Zero minimum order quantity. 1-unit demo floor order eligible for full trade discount.</li>
+  <li><strong>Parts Depot:</strong> 48-hour parts dispatch from Adelaide facility.</li>
+  <li><strong>Activation:</strong> B2B portal login enabled within 24 business hours of application receipt.</li>
+</ul>
+
+<a href="https://lifestylemobilityscooters.com.au/wholesale/" class="email-cta-btn">Fast-Track B2B Account Activation</a>
+`
+          }
+        }
+      }
+    };
+
+    let activeIndex = 0;
+    let currentFilter = 'all';
+    let currentSearch = '';
+    let currentTone = 'Formal/Clinical'; // 'Formal/Clinical' | 'Empathetic/Care' | 'Direct/Support'
+    let activeTemplateKey = 'arr204';
+    let currentView = 'preview'; // 'preview' | 'code' | 'split'
+
+    const TONE_CONFIG = {
+      'Formal/Clinical': {
+        desc: 'Statutory accuracy, Australian Road Rule 204 citations & legal precision',
+        badgeBg: 'var(--primary-light)',
+        badgeColor: 'var(--primary)',
+        closing: 'Yours faithfully,',
+        title: 'Clinical Assistive Support Desk',
+        subtitle: 'LIFESTYLE MOBILITY SCOOTERS Australia'
+      },
+      'Empathetic/Care': {
+        desc: 'Warm, reassuring & patient-centred reassurance for elderly and family',
+        badgeBg: '#FDF2F4',
+        badgeColor: '#E11D48',
+        closing: 'With warmest regards and best wishes for your independence,',
+        title: 'Patient Care & Community Liaison Team',
+        subtitle: 'LIFESTYLE MOBILITY Australia'
+      },
+      'Direct/Support': {
+        desc: 'Concise, bullet-first checklist for fast action & swift dispatch',
+        badgeBg: '#EFF6FF',
+        badgeColor: '#2563EB',
+        closing: 'Best regards,',
+        title: 'Technical Support & Fast-Track Dispatch',
+        subtitle: 'LIFESTYLE MOBILITY Australia'
+      }
+    };
+
+    // Initialize Portal
+    function initPortal() {
+      renderTickets();
+      selectTicket(0);
+    }
+
+    // Render Ticket List
+    function renderTickets() {
+      const container = document.getElementById('ticket-list-container');
+      const filtered = INQUIRIES.filter(t => {
+        const matchesFilter = currentFilter === 'all' || t.status === currentFilter;
+        const q = currentSearch.toLowerCase().trim();
+        const matchesSearch = !q || 
+          t.name.toLowerCase().includes(q) || 
+          t.email.toLowerCase().includes(q) || 
+          t.id.toLowerCase().includes(q) || 
+          t.message.toLowerCase().includes(q) ||
+          t.category.toLowerCase().includes(q);
+        return matchesFilter && matchesSearch;
+      });
+
+      document.getElementById('inbox-count').innerText = `${filtered.length} Messages`;
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div style="padding: 2.5rem 1rem; text-align: center; color: #94A3B8;">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔍</div>
+            <div style="font-size: 0.85rem; font-weight: 700;">No matching inquiries found</div>
+            <div style="font-size: 0.72rem; margin-top: 0.25rem;">Try clearing your search term</div>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = filtered.map((t, idx) => {
+        const realIdx = INQUIRIES.findIndex(item => item.id === t.id);
+        const isActive = realIdx === activeIndex;
+        let statusBadge = '';
+        if (t.status === 'new') statusBadge = '<span class="status-badge status-new">NEW</span>';
+        else if (t.status === 'replied') statusBadge = '<span class="status-badge status-replied">REPLIED</span>';
+        else statusBadge = '<span class="status-badge status-progress">IN PROGRESS</span>';
+
+        return `
+          <div class="ticket-item ${isActive ? 'active' : ''}" onclick="selectTicket(${realIdx})">
+            <div class="ticket-meta">
+              <span class="ticket-id">${t.id}</span>
+              <span class="ticket-time">${t.date}</span>
+            </div>
+            <div class="ticket-sender">
+              <span>${t.name}</span>
+            </div>
+            <div class="ticket-subject">${t.subject}</div>
+            <div class="ticket-tags">
+              ${statusBadge}
+              <span class="cat-badge">${t.category}</span>
+              <span style="font-size: 0.65rem; color: #94A3B8; margin-left: auto;">${t.location}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Select Active Ticket
+    function selectTicket(index) {
+      if (index < 0 || index >= INQUIRIES.length) return;
+      activeIndex = index;
+      const t = INQUIRIES[index];
+
+      // Update Top Details
+      document.getElementById('active-id').innerText = t.id;
+      document.getElementById('active-name').innerText = t.name;
+      document.getElementById('active-email').innerText = t.email;
+      document.getElementById('active-phone').innerText = t.phone;
+      document.getElementById('active-loc').innerText = t.location;
+      document.getElementById('active-date').innerText = t.date;
+      document.getElementById('active-cat').innerText = t.category;
+      document.getElementById('active-message').innerHTML = `&ldquo;${t.message}&rdquo;`;
+
+      // Status Badge
+      const statusEl = document.getElementById('active-status');
+      statusEl.className = 'status-badge';
+      if (t.status === 'new') {
+        statusEl.classList.add('status-new');
+        statusEl.innerText = 'NEW INQUIRY';
+      } else if (t.status === 'replied') {
+        statusEl.classList.add('status-replied');
+        statusEl.innerText = 'REPLIED';
+      } else {
+        statusEl.classList.add('status-progress');
+        statusEl.innerText = 'IN PROGRESS';
+      }
+
+      document.getElementById('status-updater').value = t.status;
+
+      // Apply default template with active tone
+      const templateKey = t.defaultTemplate || 'arr204';
+      activeTemplateKey = templateKey;
+      applyTemplate(templateKey);
+
+      renderTickets();
+    }
+
+    // Handle Tone Dropdown Change
+    function handleToneChange(newTone) {
+      currentTone = newTone;
+      const cfg = TONE_CONFIG[newTone];
+      document.getElementById('tone-desc').innerText = cfg.desc;
+      
+      const badge = document.getElementById('tone-badge');
+      badge.innerText = newTone.toUpperCase();
+      badge.style.backgroundColor = cfg.badgeBg;
+      badge.style.color = cfg.badgeColor;
+
+      document.getElementById('active-tone-label').innerText = newTone;
+
+      applyTemplate(activeTemplateKey);
+      showToast(`Response tone toggled to: ${newTone}`);
+    }
+
+    // Apply Selected Template
+    function applyTemplate(key) {
+      activeTemplateKey = key;
+      const template = TEMPLATES[key];
+      if (!template) return;
+
+      const toneData = template.tones[currentTone] || template.tones['Formal/Clinical'];
+      const t = INQUIRIES[activeIndex];
+      let personalizedHtml = toneData.html.replace(/{CUSTOMER_NAME}/g, t.name.split(' ')[0]);
+
+      document.getElementById('reply-subject').value = toneData.subject;
+      document.getElementById('raw-html-editor').value = personalizedHtml.trim();
+
+      // Highlight active chip
+      document.querySelectorAll('.template-chips .template-chip').forEach(btn => btn.classList.remove('active'));
+      const activeChip = document.getElementById(`chip-${key}`);
+      if (activeChip) activeChip.classList.add('active');
+
+      renderEmailPreview(personalizedHtml);
+    }
+
+    // Render Full Email Preview
+    function renderEmailPreview(innerHtml) {
+      const envelope = document.getElementById('email-envelope-render');
+      const cfg = TONE_CONFIG[currentTone];
+
+      envelope.innerHTML = `
+        <div class="email-header">
+          <h2>LIFESTYLE MOBILITY AUSTRALIA</h2>
+          <p>Butler Trading Pty. Ltd. • Clinical Support Desk (Est. 1985)</p>
+        </div>
+        <div class="email-body">
+          ${innerHtml}
+          <div class="email-signature">
+            <p>${cfg.closing}</p>
+            <p style="margin-top: 0.35rem;">
+              <strong>${cfg.title}</strong><br>
+              <strong style="color: #007A78;">${cfg.subtitle}</strong><br>
+              Direct: 1800 703 244 | SMS Concierge: +61 400 000 000<br>
+              National HQ: 3 Shepley Ave, Panorama SA 5041<br>
+              Web: <a href="https://lifestylemobilityscooters.com.au" style="color: #007A78; text-decoration: none;">lifestylemobilityscooters.com.au</a>
+            </p>
+          </div>
+        </div>
+        <div class="email-legal-footer">
+          <strong>CONFIDENTIALITY & REGULATORY NOTICE:</strong> This transmission contains clinical advice regarding Australian Road Rule 204 speed governance (10 km/h) and Section 38-45 GST exemptions. Supplied by Butler Trading Pty. Ltd. (ABN 84 008 071 323). If you received this in error, please notify the sender immediately.
+        </div>
+      `;
+    }
+
+    // Sync Preview from Code Editor
+    function syncPreviewFromCode() {
+      const code = document.getElementById('raw-html-editor').value;
+      renderEmailPreview(code);
+    }
+
+    // Switch View (Preview / Code / Split)
+    function switchView(view) {
+      currentView = view;
+      document.getElementById('tab-preview').classList.toggle('active', view === 'preview');
+      document.getElementById('tab-code').classList.toggle('active', view === 'code');
+      document.getElementById('tab-split').classList.toggle('active', view === 'split');
+
+      const container = document.getElementById('view-container');
+      const previewPanel = document.getElementById('preview-panel');
+      const codePanel = document.getElementById('code-panel');
+
+      if (view === 'preview') {
+        container.style.gridTemplateColumns = '1fr';
+        previewPanel.style.display = 'block';
+        codePanel.style.display = 'none';
+      } else if (view === 'code') {
+        container.style.gridTemplateColumns = '1fr';
+        previewPanel.style.display = 'none';
+        codePanel.style.display = 'block';
+      } else if (view === 'split') {
+        container.style.gridTemplateColumns = '1fr 1fr';
+        previewPanel.style.display = 'block';
+        codePanel.style.display = 'block';
+      }
+    }
+
+    // Wrap Selection or Append Tag in Code Editor
+    function wrapCode(openTag, closeTag) {
+      const editor = document.getElementById('raw-html-editor');
+      const start = editor.selectionStart;
+      const end = editor.selectionEnd;
+      const text = editor.value;
+
+      if (start !== end) {
+        const selected = text.substring(start, end);
+        editor.value = text.substring(0, start) + openTag + selected + closeTag + text.substring(end);
+      } else {
+        editor.value = text + `\n${openTag}Sample Text${closeTag}`;
+      }
+      syncPreviewFromCode();
+      showToast('HTML tag inserted');
+    }
+
+    function insertCTA() {
+      wrapCode('<a href="https://lifestylemobilityscooters.com.au/shop/" class="email-cta-btn">', '</a>');
+    }
+
+    // Search and Filter Handlers
+    function handleSearch(val) {
+      currentSearch = val;
+      renderTickets();
+    }
+
+    function filterStatus(status, btn) {
+      currentFilter = status;
+      document.querySelectorAll('.filter-tabs .tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderTickets();
+    }
+
+    function updateTicketStatus(newStatus) {
+      INQUIRIES[activeIndex].status = newStatus;
+      renderTickets();
+      selectTicket(activeIndex);
+      showToast(`Inquiry status updated to ${newStatus.toUpperCase()}`);
+    }
+
+    // Copy Full HTML Code to Clipboard
+    function copyHtmlCode() {
+      const code = document.getElementById('email-envelope-render').outerHTML;
+      navigator.clipboard.writeText(code).then(() => {
+        showToast('HTML email template copied to clipboard!');
+      }).catch(() => {
+        showToast('Unable to copy to clipboard');
+      });
+    }
+
+    // Download .html File
+    function downloadHtmlFile() {
+      const t = INQUIRIES[activeIndex];
+      const code = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>${document.getElementById('reply-subject').value}</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: #F8FAFC; margin: 0; padding: 2rem 1rem; }
+.email-envelope { max-width: 620px; margin: 0 auto; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+.email-header { background: #007A78; color: #FFFFFF; padding: 1.5rem; text-align: center; }
+.email-header h2 { font-size: 1.25rem; margin: 0 0 0.25rem; }
+.email-header p { font-size: 0.72rem; opacity: 0.85; text-transform: uppercase; letter-spacing: 0.1em; margin: 0; }
+.email-body { padding: 1.75rem; font-size: 0.9rem; line-height: 1.65; color: #1E252B; }
+.email-body h3 { font-size: 1.05rem; color: #007A78; margin: 1.25rem 0 0.5rem; }
+.email-callout { background: #F4F1EA; border-left: 4px solid #007A78; padding: 0.85rem 1.15rem; margin: 1.25rem 0; border-radius: 0 8px 8px 0; font-size: 0.82rem; color: #1E252B; }
+.email-cta-btn { display: inline-block; background: #007A78; color: #FFFFFF !important; text-decoration: none; padding: 0.75rem 1.4rem; border-radius: 8px; font-weight: 700; font-size: 0.85rem; margin: 1rem 0; }
+.email-signature { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid #E2E8F0; font-size: 0.8rem; color: #4A5568; }
+.email-legal-footer { background: #F8FAFC; border-top: 1px solid #E2E8F0; padding: 1rem 1.5rem; font-size: 0.68rem; color: #64748B; line-height: 1.5; }
+</style>
+</head>
+<body>
+${document.getElementById('email-envelope-render').outerHTML}
+</body>
+</html>`;
+
+      const blob = new Blob([code], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `Reply_${t.id}_${currentTone.replace(/\//g, '_')}_${t.name.replace(/\s+/g, '_')}.html`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('Downloaded formatted HTML email reply file!');
+    }
+
+    // Send via WhatsApp Direct API
+    function sendViaWhatsApp() {
+      const t = INQUIRIES[activeIndex];
+      const cleanPhone = t.phone.replace(/[^0-9]/g, '');
+      const formattedPhone = cleanPhone.startsWith('0') ? '61' + cleanPhone.substring(1) : cleanPhone;
+      const textMsg = `Hi ${t.name.split(' ')[0]},\n\nThank you for contacting Lifestyle Mobility Australia regarding your inquiry (${t.id}).\n\nOur team has prepared your requested specifications. Please view our full catalog and compliance guides online at https://lifestylemobilityscooters.com.au or phone us toll-free on 1800 703 244.\n\nWarm regards,\nLifestyle Mobility Australia Team`;
+
+      const waUrl = `https://wa.me/${formattedPhone}?text=${encodeURIComponent(textMsg)}`;
+      window.open(waUrl, '_blank');
+      showToast('Opening WhatsApp with prefilled reply');
+    }
+
+    // Send via Default Mail Client (mailto:)
+    function sendViaMailto() {
+      const t = INQUIRIES[activeIndex];
+      const subject = encodeURIComponent(document.getElementById('reply-subject').value);
+      const textContent = document.getElementById('raw-html-editor').value
+        .replace(/<[^>]*>/g, '')
+        .replace(/\n\s*\n/g, '\n\n');
+      
+      const body = encodeURIComponent(textContent);
+      window.location.href = `mailto:${t.email}?subject=${subject}&body=${body}`;
+    }
+
+    // Mark as Sent / Replied
+    function markAsSent() {
+      INQUIRIES[activeIndex].status = 'replied';
+      updateTicketStatus('replied');
+      showToast('Reply recorded and marked as REPLIED!');
+    }
+
+    // Toast Utility
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-msg').innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+
+    // Launch on DOM ready
+    window.addEventListener('DOMContentLoaded', initPortal);
+  </script>
+</body>
+</html>

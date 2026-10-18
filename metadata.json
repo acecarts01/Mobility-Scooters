@@ -1,0 +1,8 @@
+{
+  "name": "LIFESTYLE MOBILITY SCOOTERS Australia",
+  "description": "Australia’s Trusted Specialists in Folding, Heavy-Duty & All-Terrain Mobility Scooters. 100% Pedestrian Legal & GST-Free.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

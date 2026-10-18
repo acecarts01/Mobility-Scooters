@@ -1,0 +1,121 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/server-card/v1.json",
+  "serverInfo": {
+    "name": "LIFESTYLE MOBILITY SCOOTERS Australia",
+    "version": "1.0.0",
+    "description": "Australia’s trusted choice to buy mobility scooter online. Backed by nearly 40 years of medical heritage, we specialise in electric mobility scooter Australia solutions including heavy-duty and all-terrain models.",
+    "homepage": "https://lifestylemobilityscooters.com.au",
+    "contact": {
+      "email": "sales@lifestylemobilityscooters.com.au",
+      "whatsapp": "+61400000000"
+    }
+  },
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://lifestylemobilityscooters.com.au/api/mcp/"
+  },
+  "capabilities": {
+    "tools": [
+      {
+        "name": "search_products",
+        "description": "Search products by keyword, category, max_price",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string"
+            },
+            "category": {
+              "type": "string"
+            },
+            "max_price": {
+              "type": "number"
+            }
+          }
+        }
+      },
+      {
+        "name": "get_product",
+        "description": "Get full product details by slug",
+        "inputSchema": {
+          "type": "object",
+          "required": [
+            "slug"
+          ],
+          "properties": {
+            "slug": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      {
+        "name": "list_categories",
+        "description": "List all product categories",
+        "inputSchema": {
+          "type": "object",
+          "properties": {}
+        }
+      },
+      {
+        "name": "get_policies",
+        "description": "Get shipping, payment, returns policies",
+        "inputSchema": {
+          "type": "object",
+          "properties": {}
+        }
+      },
+      {
+        "name": "create_order_draft",
+        "description": "Create prefilled order URL. Human completes — never captures payment.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "items": {
+              "type": "array"
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    ],
+    "resources": [
+      {
+        "name": "product-catalog",
+        "description": "Full product catalog",
+        "uri": "https://lifestylemobilityscooters.com.au/shop/"
+      },
+      {
+        "name": "wholesale",
+        "description": "Wholesale pricing",
+        "uri": "https://lifestylemobilityscooters.com.au/wholesale/"
+      },
+      {
+        "name": "blog",
+        "description": "Educational mobility guides",
+        "uri": "https://lifestylemobilityscooters.com.au/blog/"
+      }
+    ],
+    "commerce": {
+      "ordering": "human-assisted-whatsapp-or-form",
+      "payment": [
+        "crypto-BTC",
+        "crypto-USDT",
+        "bank-transfer-bsb",
+        "payid",
+        "zip-money",
+        "afterpay"
+      ],
+      "currency": "AUD",
+      "minimumOrder": "0",
+      "freeShipping": "150"
+    }
+  },
+  "legal": {
+    "ageRestriction": "None",
+    "productType": "Assistive Mobility Technology (AS/NZS 3695.2:2013)",
+    "compliance": "Austroads Australian Road Rules compliance (10 km/h pedestrian zone limit; GST-free medical equipment under GST Act 1999 Schedule 3)"
+  }
+}

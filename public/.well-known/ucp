@@ -1,0 +1,18 @@
+{
+  "ucp": "1.0",
+  "site": "https://lifestylemobilityscooters.com.au",
+  "name": "LIFESTYLE MOBILITY SCOOTERS Australia",
+  "description": "Mobility Scooters for Sale Australia | Premium Electric Specialists",
+  "services": [
+    {
+      "id": "catalog",
+      "type": "catalog",
+      "url": "https://lifestylemobilityscooters.com.au/shop/"
+    },
+    {
+      "id": "mcp",
+      "type": "mcp",
+      "url": "https://lifestylemobilityscooters.com.au/api/mcp/"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+# LIFESTYLE MOBILITY SCOOTERS Australia
+> Mobility Scooters for Sale Australia | Premium Electric Specialists
+
+Australia’s trusted choice to buy mobility scooter online. Backed by nearly 40 years of medical heritage, we specialise in electric mobility scooter Australia solutions including heavy-duty and all-terrain models.
+
+## Identity
+- Name: LIFESTYLE MOBILITY SCOOTERS Australia
+- HQ: 3 Shepley Ave, Panorama SA 5041, Australia
+- Founded: 1985
+- Entity: BUTLER TRADING PTY. LTD. (ABN: 84 008 071 323)
+
+## Contact
+- Phone: 1800 703 244
+- WhatsApp: +61400000000
+- Email: sales@lifestylemobilityscooters.com.au
+
+## Policies
+- Min Order: 0 AUD
+- Free Shipping: Over 150 AUD (Accessories)
+- Metro Freight: 149 AUD (Vehicles)
+- Compliance: 100% Pedestrian Legal (ARR 204), GST-Free Medical Aids.
+
+## Product Categories
+- [Folding Mobility Scooters](https://lifestylemobilityscooters.com.au/shop/portable-folding/): Lightweight and auto-folding mobility scooters for sale. Ideal for travel and car boots.
+- [Pavement & Shopping Scooters](https://lifestylemobilityscooters.com.au/shop/mid-size-everyday/): Compact 4-wheel mobile scooters for sale. Best for shopping centres and daily use.
+- [Heavy Duty Mobility Scooters](https://lifestylemobilityscooters.com.au/shop/heavy-duty-all-terrain/): Bariatric-ready large mobility scooters. High capacity and all-terrain performance.
+- [Ramps & Vehicle Hoists](https://lifestylemobilityscooters.com.au/shop/ramps-hoists/): Technical solutions for loading your mobility cart or scooter.
+- [Scooter Parts & Accessories](https://lifestylemobilityscooters.com.au/shop/batteries-accessories/): Replacement batteries, chargers, and custom mobility scooter accessories.
+
+## Featured Products
+- [Lifestyle AeroFold™ Remote Auto-Folding Travel Scooter](https://lifestylemobilityscooters.com.au/shop/portable-folding/aerofold-remote-auto-folding/): 2890 AUD (GST-Free)
+- [Outback Cruiser™ Heavy-Duty All-Terrain Mobility Scooter](https://lifestylemobilityscooters.com.au/shop/heavy-duty-all-terrain/outback-cruiser-heavy-duty/): 4650 AUD (GST-Free)
+- [MetroGlide™ 4-Wheel Compact Daily Pavement Scooter](https://lifestylemobilityscooters.com.au/shop/mid-size-everyday/metroglide-compact-daily/): 2190 AUD (GST-Free)
+
+## Optional Resources
+- [API Catalog](https://lifestylemobilityscooters.com.au/.well-known/api-catalog)
+- [Agent Skills Index](https://lifestylemobilityscooters.com.au/.well-known/agent-skills/index.json)
+- [MCP Server Card](https://lifestylemobilityscooters.com.au/.well-known/mcp/server-card.json)
+- [Auth Documentation](https://lifestylemobilityscooters.com.au/auth.md)
