@@ -8,6 +8,7 @@
     "build": "npm run gen && next build",
     "start": "next start",
     "lint": "next lint",
+    "type-check": "tsc --noEmit",
     "gen": "node scripts/gen-agent-files.mjs",
     "crosscheck": "node scripts/crosscheck.mjs",
     "prebuild": "npm run gen"

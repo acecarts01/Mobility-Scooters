@@ -8,14 +8,14 @@ import {
   ShieldCheck, 
   Zap, 
   Weight, 
-  Activity, 
   Gauge, 
+  Activity,
   CheckCircle2, 
   ChevronRight,
-  Sparkles
+  FileText
 } from 'lucide-react';
 import { Product } from '@/src/lib/catalog';
-import { ProductImage } from './ProductImage';
+import { ProductThumbnail } from './ProductThumbnail';
 import { useCart } from '@/src/context/CartContext';
 
 interface ProductCardProps {
@@ -29,7 +29,7 @@ export function ProductCard({ product }: ProductCardProps) {
   // Stock status determination
   const idNum = parseInt(product.id.replace(/\D/g, '') || '0', 10);
   const isLimitedStock = product.badge === 'Top Seller' || idNum % 3 === 0;
-  const stockCount = (idNum % 3) + 2; // e.g. 2, 3, or 4 left in AU warehouse
+  const stockCount = (idNum % 3) + 2;
 
   const handleQuickBuy = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -39,156 +39,157 @@ export function ProductCard({ product }: ProductCardProps) {
     setTimeout(() => setIsAdded(false), 2200);
   };
 
+  const primaryImage = product.images && product.images.length > 0 ? product.images[0] : undefined;
+
   return (
-    <motion.div 
-      initial={{ opacity: 0, y: 20 }}
+    <motion.article 
+      initial={{ opacity: 0, y: 15 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      whileHover={{ y: -6, scale: 1.02 }}
-      transition={{ type: "spring", stiffness: 350, damping: 25 }}
-      className="bg-white rounded-[2rem] p-6 shadow-sm hover:shadow-2xl hover:shadow-primary/15 transition-all duration-300 border border-gray-100 hover:border-primary/30 group flex flex-col h-full cursor-pointer"
+      whileHover={{ y: -5 }}
+      transition={{ duration: 0.25 }}
+      className="bg-white rounded-3xl p-5 md:p-6 shadow-sm hover:shadow-xl hover:shadow-[#007A78]/10 transition-all duration-300 border-2 border-[#1E252B]/10 hover:border-[#007A78] flex flex-col h-full group"
     >
-      {/* Visual Header */}
-      <div className="relative mb-5">
-        <Link href={`/shop/${product.categorySlug}/${product.slug}/`} className="block">
-          <div className="product-frame aspect-[4/3] relative overflow-hidden bg-accent/20 rounded-2xl">
-            <ProductImage 
-              productId={product.id} 
-              fallbackTitle={product.name} 
-              className="object-contain group-hover:scale-110 transition-transform duration-500"
-            />
-            
-            {/* Top-Left Badges */}
-            <div className="absolute top-3 left-3 flex flex-col gap-2 z-10">
-              {product.badge && (
-                <span className="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
-                  {product.badge}
-                </span>
-              )}
-              {product.specs.airlineApproved && (
-                <span className="bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1 shadow-sm">
-                  <Zap size={10} /> IATA Flight Safe
-                </span>
-              )}
-            </div>
+      {/* 1. Visual Thumbnail with Category Schematic Fallback */}
+      <div className="relative mb-4">
+        <Link 
+          href={`/shop/${product.categorySlug}/${product.slug}/`} 
+          className="block focus:outline-hidden focus:ring-4 focus:ring-[#007A78]/40 rounded-2xl"
+          aria-label={`View details for ${product.name}`}
+        >
+          <ProductThumbnail
+            src={primaryImage}
+            alt={product.name}
+            sku={product.sku}
+            brand={product.brand}
+            categorySlug={product.categorySlug}
+            airlineApproved={product.specs.airlineApproved}
+            arr204Compliant={product.specs.arr204FootpathCompliant}
+            className="group-hover:scale-[1.02] transition-transform duration-300"
+          />
 
-            {/* Top-Right Stock Status Indicator Badge */}
-            <div className="absolute top-3 right-3 z-10">
-              {isLimitedStock ? (
-                <span className="inline-flex items-center gap-1.5 bg-amber-500/95 backdrop-blur-sm text-white text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-md">
-                  <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
-                  Limited Stock
-                </span>
-              ) : (
-                <span className="inline-flex items-center gap-1.5 bg-emerald-600/90 backdrop-blur-sm text-white text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-md">
-                  <span className="w-1.5 h-1.5 rounded-full bg-white" />
-                  In Stock
-                </span>
-              )}
-            </div>
-
-            {/* Compliance Overlays */}
-            <div className="absolute bottom-3 left-3 right-3 z-10 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-              <div className="bg-charcoal/90 backdrop-blur-sm text-white p-2 rounded-xl text-[8px] font-bold uppercase tracking-widest text-center flex items-center justify-center gap-2 border border-white/10 shadow-lg">
-                <ShieldCheck size={12} className="text-primary-light" />
-                ARR 204 Pedestrian Legal
-              </div>
-            </div>
+          {/* Top-Right Urgency Badge */}
+          <div className="absolute top-3 right-3 z-30 pointer-events-none">
+            {isLimitedStock ? (
+              <span className="inline-flex items-center gap-1.5 bg-[#B45309] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                Limited Stock ({stockCount} Left)
+              </span>
+            ) : (
+              <span className="inline-flex items-center gap-1.5 bg-[#007A78] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-white" />
+                In Stock (AU Warehouse)
+              </span>
+            )}
           </div>
         </Link>
       </div>
 
-      {/* Identity */}
+      {/* 2. Identity & ARR 204 Regulatory Tag */}
       <div className="mb-4">
-        <span className="text-[10px] font-bold text-charcoal/40 uppercase tracking-widest block mb-1">
-          {product.brand} • {product.subcategory}
-        </span>
-        <Link href={`/shop/${product.categorySlug}/${product.slug}/`}>
-          <h3 className="text-lg md:text-xl font-bold text-charcoal group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+        <div className="flex items-center justify-between gap-2 mb-1.5">
+          <span className="text-xs font-bold text-[#1E252B]/60 uppercase tracking-wider">
+            {product.brand} &bull; {product.subcategory || product.category}
+          </span>
+          <span className="inline-flex items-center gap-1 bg-[#F4F1EA] text-[#007A78] text-[10px] font-bold px-2.5 py-0.5 rounded-md border border-[#007A78]/20">
+            <ShieldCheck size={12} />
+            ARR 204 (&le; {product.specs.maxSpeedKmh}km/h)
+          </span>
+        </div>
+
+        <Link 
+          href={`/shop/${product.categorySlug}/${product.slug}/`}
+          className="focus:outline-hidden focus:ring-2 focus:ring-[#007A78] rounded-sm block"
+        >
+          <h3 className="text-xl md:text-2xl font-bold text-[#1E252B] group-hover:text-[#007A78] transition-colors line-clamp-2 leading-snug">
             {product.name}
           </h3>
         </Link>
       </div>
 
-      {/* Specs Matrix */}
-      <div className="grid grid-cols-3 gap-2 mb-5">
-        <div className="bg-accent/50 rounded-xl p-2 text-center border border-charcoal/5">
-          <Weight size={14} className="mx-auto text-primary mb-1" />
-          <p className="text-[9px] font-bold text-charcoal/40 uppercase tracking-tighter">Capacity</p>
-          <p className="text-xs font-bold text-charcoal">{product.specs.safeWorkingLoadKg}kg</p>
+      {/* 3. Specs Pill Matrix: Safe Working Load, Estimated Range, Total Weight */}
+      <div className="grid grid-cols-3 gap-2 mb-4" role="list" aria-label="Key Specifications">
+        <div className="bg-[#F4F1EA] rounded-xl p-2.5 text-center border border-[#1E252B]/10" role="listitem">
+          <Weight size={16} className="mx-auto text-[#007A78] mb-1" aria-hidden="true" />
+          <p className="text-[10px] font-extrabold text-[#1E252B]/60 uppercase tracking-tight">SWL Capacity</p>
+          <p className="text-sm font-bold text-[#1E252B]">{product.specs.safeWorkingLoadKg} kg</p>
         </div>
-        <div className="bg-accent/50 rounded-xl p-2 text-center border border-charcoal/5">
-          <Gauge size={14} className="mx-auto text-primary mb-1" />
-          <p className="text-[9px] font-bold text-charcoal/40 uppercase tracking-tighter">Range</p>
-          <p className="text-xs font-bold text-charcoal">{product.specs.estimatedRangeKm}km</p>
+        <div className="bg-[#F4F1EA] rounded-xl p-2.5 text-center border border-[#1E252B]/10" role="listitem">
+          <Gauge size={16} className="mx-auto text-[#007A78] mb-1" aria-hidden="true" />
+          <p className="text-[10px] font-extrabold text-[#1E252B]/60 uppercase tracking-tight">Max Range</p>
+          <p className="text-sm font-bold text-[#1E252B]">{product.specs.estimatedRangeKm} km</p>
         </div>
-        <div className="bg-accent/50 rounded-xl p-2 text-center border border-charcoal/5">
-          <Activity size={14} className="mx-auto text-primary mb-1" />
-          <p className="text-[9px] font-bold text-charcoal/40 uppercase tracking-tighter">Weight</p>
-          <p className="text-xs font-bold text-charcoal">{product.specs.totalWeightKg}kg</p>
+        <div className="bg-[#F4F1EA] rounded-xl p-2.5 text-center border border-[#1E252B]/10" role="listitem">
+          <Activity size={16} className="mx-auto text-[#007A78] mb-1" aria-hidden="true" />
+          <p className="text-[10px] font-extrabold text-[#1E252B]/60 uppercase tracking-tight">Total Weight</p>
+          <p className="text-sm font-bold text-[#1E252B]">{product.specs.totalWeightKg} kg</p>
         </div>
       </div>
 
-      {/* Stock Urgency Line */}
-      <div className="mb-2">
-        {isLimitedStock ? (
-          <div className="flex items-center gap-1.5 text-[11px] font-bold text-amber-700 bg-amber-50/80 px-2.5 py-1 rounded-lg border border-amber-200/60">
-            <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse shrink-0" />
-            <span>Limited Stock — Only {stockCount} units remaining in AU</span>
-          </div>
-        ) : (
-          <div className="flex items-center gap-1.5 text-[11px] font-bold text-emerald-700 bg-emerald-50/80 px-2.5 py-1 rounded-lg border border-emerald-200/60">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
-            <span>In Stock — Ready for 24h dispatch</span>
-          </div>
-        )}
-      </div>
-
-      {/* Pricing - Clinical Standard */}
-      <div className="mb-5 pt-3 border-t border-gray-100 mt-auto">
-        <div className="flex items-baseline justify-between">
-          <span className="text-2xl font-bold text-primary tracking-tight">
-            ${product.price.toLocaleString()} AUD
+      {/* 4. Pricing: Clinical Standard + GST Exemption statutory notice */}
+      <div className="mb-4 pt-3 border-t-2 border-[#1E252B]/5 mt-auto">
+        <div className="flex items-baseline justify-between flex-wrap gap-1">
+          <span className="text-2xl md:text-3xl font-extrabold text-[#007A78] tracking-tight">
+            ${product.price.toLocaleString('en-AU', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} AUD
           </span>
-          <span className="text-[9px] font-bold text-charcoal/40 uppercase tracking-widest">
-            0% GST-Free
+          <span className="bg-[#007A78]/10 text-[#007A78] text-xs font-extrabold px-2.5 py-1 rounded-md uppercase tracking-wider border border-[#007A78]/20">
+            GST-Free (0% GST)
           </span>
         </div>
+        <p className="text-[11px] text-[#1E252B]/60 font-medium mt-1">
+          Sec 38-45 Health Act &bull; NDIS Funding Eligible
+        </p>
       </div>
 
-      {/* Action Buttons: Quick Buy + Specs Link */}
-      <div className="flex flex-col gap-2 pt-1">
-        <button 
-          type="button"
-          onClick={handleQuickBuy}
-          aria-label={`Quick Buy ${product.name}`}
-          className={`w-full py-3.5 px-4 rounded-2xl font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all duration-200 ${
-            isAdded 
-              ? 'bg-emerald-600 text-white shadow-emerald-600/30 scale-[1.02]' 
-              : 'medical-gradient text-white hover:shadow-lg hover:shadow-primary/25 hover:scale-[1.02] active:scale-[0.98]'
-          }`}
-        >
-          {isAdded ? (
-            <>
-              <CheckCircle2 size={16} className="shrink-0" />
-              <span>Added to Cart!</span>
-            </>
-          ) : (
-            <>
-              <ShoppingCart size={16} className="shrink-0" />
-              <span>Quick Buy</span>
-            </>
-          )}
-        </button>
+      {/* 5. Accessible Action CTAs (Minimum 48px touch targets) */}
+      <div className="flex flex-col gap-2.5 pt-1">
+        <div className="grid grid-cols-2 gap-2">
+          {/* Quick Buy CTA */}
+          <button 
+            type="button"
+            onClick={handleQuickBuy}
+            aria-label={`Quick Buy ${product.name}`}
+            className={`min-h-[48px] px-4 rounded-xl font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-xs transition-all duration-200 cursor-pointer focus:outline-hidden focus:ring-4 focus:ring-[#007A78]/30 ${
+              isAdded 
+                ? 'bg-[#007A78] text-white' 
+                : 'bg-[#007A78] hover:bg-[#00605E] text-white active:scale-98'
+            }`}
+          >
+            {isAdded ? (
+              <>
+                <CheckCircle2 size={18} className="shrink-0" />
+                <span>Added!</span>
+              </>
+            ) : (
+              <>
+                <ShoppingCart size={18} className="shrink-0" />
+                <span>Quick Buy</span>
+              </>
+            )}
+          </button>
 
+          {/* Direct NDIS Quote Trigger CTA */}
+          <Link
+            href={`/ndis-funding/?product=${encodeURIComponent(product.slug)}`}
+            aria-label={`Request formal NDIS Quote for ${product.name}`}
+            className="min-h-[48px] px-3 rounded-xl font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 bg-[#F4F1EA] hover:bg-[#EAE4D7] text-[#1E252B] border-2 border-[#1E252B]/15 transition-all text-center focus:outline-hidden focus:ring-4 focus:ring-[#007A78]/30 active:scale-98"
+          >
+            <FileText size={16} className="text-[#007A78] shrink-0" />
+            <span>NDIS Quote</span>
+          </Link>
+        </div>
+
+        {/* View Full Specifications Link (>= 48px target) */}
         <Link
           href={`/shop/${product.categorySlug}/${product.slug}/`}
-          className="w-full text-center py-1.5 text-[11px] font-bold text-charcoal/60 hover:text-primary transition-colors flex items-center justify-center gap-1 group/link"
+          className="min-h-[48px] w-full text-center px-4 rounded-xl text-sm font-bold text-[#1E252B] hover:text-[#007A78] hover:bg-[#F4F1EA]/60 border border-transparent hover:border-[#1E252B]/10 transition-all flex items-center justify-center gap-1.5 focus:outline-hidden focus:ring-2 focus:ring-[#007A78]"
         >
-          <span>View Full Specifications</span>
-          <ChevronRight size={13} className="group-hover/link:translate-x-0.5 transition-transform" />
+          <span>View Full Technical Specifications</span>
+          <ChevronRight size={16} className="text-[#007A78] shrink-0" />
         </Link>
       </div>
-    </motion.div>
+    </motion.article>
   );
 }
+
+export default ProductCard;

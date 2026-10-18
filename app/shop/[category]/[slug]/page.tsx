@@ -1,33 +1,45 @@
 import { getProductBySlug, PRODUCTS_CATALOG } from '@/src/lib/catalog';
 import { SITE } from '@/src/config/site';
 import ProductClient from '@/src/components/ProductClient';
-import JsonLd from '@/src/components/JsonLd';
+import { generateProductSchemaGraph } from '@/src/lib/schema';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
-export async function generateMetadata({ params }: { params: Promise<{ category: string, slug: string }> }): Promise<Metadata> {
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ category: string; slug: string }> 
+}): Promise<Metadata> {
   const { slug } = await params;
   const product = getProductBySlug(slug);
   
   if (!product) return {};
 
+  const canonicalUrl = `https://${SITE.domain}/shop/${product.categorySlug}/${product.slug}/`;
+  const primaryImage = product.images && product.images.length > 0 
+    ? product.images[0] 
+    : `/images/products/${product.slug}.webp`;
+  const ogImageUrl = primaryImage.startsWith('http') 
+    ? primaryImage 
+    : `https://${SITE.domain}${primaryImage.startsWith('/') ? '' : '/'}${primaryImage}`;
+
   return {
-    title: `${product.name} | Lifestyle Mobility Scooters`,
-    description: product.shortDescription,
+    title: `${product.name} | Lifestyle Mobility Scooters Australia`,
+    description: `${product.shortDescription} ARR 204 pedestrian compliant electric mobility scooter. 100% GST-Free in Australia. Nationwide delivery.`,
     alternates: {
-      canonical: `https://${SITE.domain}/shop/${product.categorySlug}/${product.slug}/`,
+      canonical: canonicalUrl,
     },
     openGraph: {
-      title: product.name,
+      title: `${product.name} | ARR 204 Pedestrian Compliant`,
       description: product.shortDescription,
       type: 'article',
-      url: `https://${SITE.domain}/shop/${product.categorySlug}/${product.slug}/`,
+      url: canonicalUrl,
       images: [
         {
-          url: `https://${SITE.domain}/images/products/${product.slug}-og.jpg`,
+          url: ogImageUrl,
           width: 1200,
           height: 630,
-          alt: product.name,
+          alt: `${product.name} - Australian Road Rule 204 Compliant`,
         },
       ],
     },
@@ -35,18 +47,25 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
       card: 'summary_large_image',
       title: product.name,
       description: product.shortDescription,
-      images: [`https://${SITE.domain}/images/products/${product.slug}-og.jpg`],
+      images: [ogImageUrl],
+    },
+    other: {
+      'og:updated_time': new Date('2026-10-18T00:00:00.000Z').toISOString(),
     },
   };
 }
 
-export default async function ProductPage({ params }: { params: Promise<{ category: string, slug: string }> }) {
+export default async function ProductPage({ 
+  params 
+}: { 
+  params: Promise<{ category: string; slug: string }> 
+}) {
   const { slug } = await params;
   const product = getProductBySlug(slug);
 
   if (!product) notFound();
 
-  // Find up to 4 related products from the same category, prioritizing same subcategory
+  // Find up to 4 related products from the same category or subcategory
   const relatedProducts = PRODUCTS_CATALOG
     .filter(p => p.id !== product.id && (
       p.categorySlug === product.categorySlug ||
@@ -67,9 +86,15 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
     })
     .slice(0, 4);
 
+  // Generate complete Schema.org @graph (MedicalBusiness + WebSite + Product + BreadcrumbList)
+  const schemaGraph = generateProductSchemaGraph(product);
+
   return (
     <>
-      <JsonLd type="Product" data={product} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
+      />
       <ProductClient product={product} relatedProducts={relatedProducts} />
     </>
   );
