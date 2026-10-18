@@ -24,6 +24,7 @@ import ReviewSlider from '@/src/components/ReviewSlider';
 import Nav from '@/src/components/Nav';
 import Footer from '@/src/components/Footer';
 import { ProductImage } from '@/src/components/shop/ProductImage';
+import { formatAud, GST_FREE_LABEL } from '@/lib/utils';
 
 export default function HomeClient() {
   return (
@@ -114,7 +115,7 @@ export default function HomeClient() {
                 </div>
                 <div>
                   <p className="font-bold text-sm text-charcoal leading-none mb-1">GST-Free Medical Aids</p>
-                  <p className="text-[10px] text-charcoal/40 uppercase tracking-widest font-bold">Sec 38-45 Health Act</p>
+                  <p className="text-[10px] text-charcoal/40 uppercase tracking-widest font-bold">Sec 38-45 GST Act 1999</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -207,8 +208,8 @@ export default function HomeClient() {
                   <p className="text-sm text-charcoal/60 mb-6 line-clamp-2">{product.shortDescription}</p>
                   <div className="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
                     <div>
-                      <span className="text-2xl font-bold text-primary">${product.price.toLocaleString()} AUD</span>
-                      <span className="text-[10px] block text-charcoal/40 tracking-widest uppercase">— 0% GST / GST-Free</span>
+                      <span className="text-2xl font-bold text-primary">{formatAud(product.price)}</span>
+                      <span className="text-[10px] block text-charcoal/40 tracking-widest uppercase">{GST_FREE_LABEL}</span>
                     </div>
                     <Link 
                       href={`/shop/${product.category}/${product.slug}/`}

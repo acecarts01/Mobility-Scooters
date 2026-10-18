@@ -25,6 +25,7 @@ import { Product, PRODUCTS_CATALOG } from '@/src/lib/catalog';
 import { ARR204Badge } from './shop/ARR204Badge';
 import { ProductThumbnail } from './shop/ProductThumbnail';
 import Footer from '@/src/components/Footer';
+import { formatAud, GST_FREE_LABEL } from '@/lib/utils';
 
 export default function ProductClient({ 
   product, 
@@ -171,7 +172,7 @@ export default function ProductClient({
               <div className="bg-[#F4F1EA] p-5 rounded-2xl border-2 border-[#1E252B]/10 mb-6 flex flex-wrap items-baseline justify-between gap-2">
                 <div>
                   <span className="text-3xl md:text-4xl font-extrabold text-[#007A78] tracking-tight">
-                    ${product.price.toLocaleString('en-AU', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} AUD
+                    {formatAud(product.price)} <span className="text-base font-bold">{GST_FREE_LABEL}</span>
                   </span>
                   <p className="text-xs font-bold text-[#1E252B]/60 mt-1">
                     Free Nationwide Delivery on qualifying orders
@@ -182,7 +183,7 @@ export default function ProductClient({
                     100% GST-Free
                   </span>
                   <p className="text-[11px] font-semibold text-[#1E252B]/60 mt-1">
-                    Sec 38-45 Health Act 1999
+                    Sec 38-45 A New Tax System (GST) Act 1999
                   </p>
                 </div>
               </div>
@@ -373,7 +374,7 @@ export default function ProductClient({
                   <div className="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between">
                     <div>
                       <span className="text-lg font-bold text-[#007A78]">
-                        ${item.price.toLocaleString('en-AU', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} AUD
+                        {formatAud(item.price)}
                       </span>
                       <span className="block text-[10px] font-bold text-[#1E252B]/50 uppercase">
                         GST-Free

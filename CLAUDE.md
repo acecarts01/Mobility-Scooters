@@ -6,7 +6,7 @@
 - Identifiers: ABN 84 008 071 323 | ACN 008 071 323
 - Headquarters: 3 Shepley Ave, Panorama SA 5041, Australia
 - Phone: 1800 703 244 | Email: sales@lifestylemobilityscooters.com.au
-- Tax Treatment: 100% GST-Exempt under Australian Tax Law (GST Act 1999, Section 38-45, Item 33). All display prices render as: "$X,XXX AUD (GST-Free / 0% GST)".
+- Tax Treatment: 100% GST-Exempt under Australian Tax Law (GST Act 1999, Section 38-45, Item 33). All catalogue prices render as: "$X,XXX AUD (GST-Free)" via `formatAud()` + `GST_FREE_LABEL` in `lib/utils.ts`.
 - Road Transport: All scooters must be tagged ARR 204 compliant (≤10 km/h) for legal pedestrian footpath status across Australia.
 
 ## Tech Stack & Architecture
@@ -18,7 +18,7 @@
 
 ## Directory Layout
 - `src/types/index.ts`: Central data contracts (Product, Order, NDIS Submission).
-- `src/lib/catalog.ts`: Master catalog (268 products with full specs & query helpers).
+- `src/lib/catalog.ts`: Master catalog (177 products with full specs & query helpers; ramps/accessories have maxSpeedKmh 0).
 - `src/lib/schema.ts`: Schema.org JSON-LD graph (MedicalBusiness, Product, WebSite, FAQPage).
 - `src/app/robots.ts` & `src/app/sitemap.ts`: Next.js dynamic metadata routes.
 - `src/components/shop/ProductThumbnail.tsx`: Resilient fallback thumbnail component. Renders themed SVG schematics while awaiting photography; automatically loads `.webp` files when placed in `/public/images/products/`.

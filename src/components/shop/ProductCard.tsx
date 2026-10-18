@@ -17,6 +17,7 @@ import {
 import { Product } from '@/src/lib/catalog';
 import { ProductThumbnail } from './ProductThumbnail';
 import { useCart } from '@/src/context/CartContext';
+import { formatAud, GST_FREE_LABEL } from '@/lib/utils';
 
 interface ProductCardProps {
   product: Product;
@@ -130,14 +131,14 @@ export function ProductCard({ product }: ProductCardProps) {
       <div className="mb-4 pt-3 border-t-2 border-[#1E252B]/5 mt-auto">
         <div className="flex items-baseline justify-between flex-wrap gap-1">
           <span className="text-2xl md:text-3xl font-extrabold text-[#007A78] tracking-tight">
-            ${product.price.toLocaleString('en-AU', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} AUD
+            {formatAud(product.price)}
           </span>
           <span className="bg-[#007A78]/10 text-[#007A78] text-xs font-extrabold px-2.5 py-1 rounded-md uppercase tracking-wider border border-[#007A78]/20">
-            GST-Free (0% GST)
+            {GST_FREE_LABEL}
           </span>
         </div>
         <p className="text-[11px] text-[#1E252B]/60 font-medium mt-1">
-          Sec 38-45 Health Act &bull; NDIS Funding Eligible
+          Sec 38-45 GST Act 1999 &bull; NDIS Funding Eligible
         </p>
       </div>
 

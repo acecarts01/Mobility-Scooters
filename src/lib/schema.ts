@@ -24,7 +24,7 @@ export function buildOrganizationSchema(): SchemaLocalBusiness {
     "vatID": "ABN 84 008 071 323 | ACN 008 071 323",
     "priceRange": "$$$",
     "currenciesAccepted": "AUD",
-    "paymentAccepted": "Bank Transfer, PayID, Credit Card, NDIS Invoicing, Direct Debit",
+    "paymentAccepted": "Bank Transfer, PayID, OSKO, Crypto (BTC/USDT), NDIS Invoicing, Zip Money, Afterpay",
     "areaServed": {
       "@type": "Country",
       "name": "Australia"

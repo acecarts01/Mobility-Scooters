@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight, ArrowLeft } from 'lucide-react';
+import { formatAud, GST_FREE_LABEL } from '@/lib/utils';
 
 export default function CategoryClient({ category, products }: { category: any, products: any[] }) {
   return (
@@ -48,7 +49,7 @@ export default function CategoryClient({ category, products }: { category: any, 
                 </div>
                 <h3 className="font-bold text-charcoal group-hover:text-primary transition-colors line-clamp-2 h-12">{product.name}</h3>
                 <div className="flex items-center justify-between mt-6 pt-4 border-t border-gray-50">
-                  <span className="font-bold text-lg text-primary">${product.price.toLocaleString()}</span>
+                  <span className="font-bold text-lg text-primary">{formatAud(product.price)} <span className="text-[10px] font-semibold text-charcoal/50">{GST_FREE_LABEL}</span></span>
                   <div className="bg-accent text-primary w-10 h-10 rounded-lg flex items-center justify-center">
                     <ChevronRight size={18} />
                   </div>

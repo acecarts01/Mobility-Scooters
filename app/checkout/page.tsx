@@ -223,7 +223,7 @@ export default function CheckoutPage() {
             <div className="bg-white p-6 rounded-2xl border border-gray-100 space-y-4">
               <div className="flex gap-3">
                  <ShieldCheck className="text-primary shrink-0" size={18} />
-                 <p className="text-[10px] font-bold uppercase text-charcoal/60 leading-tight">GST-Free Medical Device Exemption applied per Sec 38-45 Health Act.</p>
+                 <p className="text-[10px] font-bold uppercase text-charcoal/60 leading-tight">GST-Free Medical Device Exemption applied per Sec 38-45 GST Act 1999.</p>
               </div>
               <div className="flex gap-3">
                  <CheckCircle2 className="text-primary shrink-0" size={18} />
