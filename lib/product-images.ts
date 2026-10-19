@@ -13,303 +13,303 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
   "LMS-001": {
     id: "LMS-001",
     slug: "lifestyle-aerofold-remote-auto-fold",
-    localPath: "/images/products/lifestyle-aerofold.webp",
+    localPath: "",
     altText: "Lifestyle AeroFold Remote Auto-Folding Electric Mobility Scooter",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/aerofold-main.webp"
   },
   "LMS-002": {
     id: "LMS-002",
     slug: "solax-transformer-automatic-folding",
-    localPath: "/images/products/solax-transformer.webp",
+    localPath: "/images/products/solax-transformer-automatic-folding.webp",
     altText: "Solax Transformer 4-Wheel Automatic Remote Folding Scooter",
-    officialMediaSource: "https://www.solaxmobility.com/"
+    officialMediaSource: "https://www.solaxmobility.com/copy-of-genie-automatic-folding-sco"
   },
   "LMS-003": {
     id: "LMS-003",
     slug: "solax-genie-plus-auto-folding",
-    localPath: "/images/products/solax-genie-plus.webp",
+    localPath: "/images/products/solax-genie-plus-auto-folding.webp",
     altText: "Solax Genie Plus Portable Auto Folding Scooter Red",
     officialMediaSource: "https://www.solaxmobility.com/"
   },
   "LMS-004": {
     id: "LMS-004",
     slug: "solax-maleta-lightweight-folding",
-    localPath: "/images/products/solax-transformer.webp",
+    localPath: "/images/products/solax-maleta-lightweight-folding.webp",
     altText: "Solax Maleta Lightweight Manual-Fold Travel Scooter",
     officialMediaSource: "https://www.solaxmobility.com/"
   },
   "LMS-005": {
     id: "LMS-005",
     slug: "solax-charge-auto-folding-induction",
-    localPath: "/images/products/solax-genie-plus.webp",
+    localPath: "/images/products/solax-charge-auto-folding-induction.webp",
     altText: "Solax Charge Automatic Folding Scooter with Wireless Induction",
-    officialMediaSource: "https://www.solaxmobility.com/"
+    officialMediaSource: "local scooter-catalogue #83"
   },
   "LMS-006": {
     id: "LMS-006",
     slug: "solax-mobie-plus-compact-folding",
-    localPath: "/images/products/solax-transformer.webp",
+    localPath: "/images/products/solax-mobie-plus-compact-folding.webp",
     altText: "Solax Mobie Plus Compact Folding Travel Scooter",
-    officialMediaSource: "https://www.solaxmobility.com/"
+    officialMediaSource: "https://www.solaxmobility.com/media-photos-"
   },
   "LMS-007": {
     id: "LMS-007",
     slug: "lifestyle-metrofold-auto-folding",
-    localPath: "/images/products/lifestyle-aerofold.webp",
+    localPath: "",
     altText: "Lifestyle MetroFold Auto-Folding Boot Scooter",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-008": {
     id: "LMS-008",
     slug: "monarch-air-auto-folding",
-    localPath: "/images/products/monarch-air-auto-fold.webp",
+    localPath: "/images/products/monarch-air-auto-folding.webp",
     altText: "Monarch Air Featherweight Magnesium Auto-Fold Scooter",
     officialMediaSource: "https://scootersaus.com.au/"
   },
   "LMS-009": {
     id: "LMS-009",
     slug: "drive-devilbiss-mojo-auto-fold",
-    localPath: "/images/products/drive-mojo-auto-fold.webp",
+    localPath: "",
     altText: "Drive DeVilbiss Mojo Auto-Fold Split Frame Scooter",
     officialMediaSource: "https://www.drivedevilbiss.com.au/"
   },
   "LMS-010": {
     id: "LMS-010",
     slug: "drive-devilbiss-zoome-auto-flex",
-    localPath: "/images/products/drive-mojo-auto-fold.webp",
+    localPath: "/images/products/drive-devilbiss-zoome-auto-flex.webp",
     altText: "Drive DeVilbiss ZooMe Auto-Flex Electric Folding Scooter",
     officialMediaSource: "https://www.drivedevilbiss.com.au/"
   },
   "LMS-011": {
     id: "LMS-011",
     slug: "drive-devilbiss-flex-folding",
-    localPath: "/images/products/lifestyle-aerofold.webp",
+    localPath: "/images/products/drive-devilbiss-flex-folding.webp",
     altText: "Drive DeVilbiss Flex Folding Travel Scooter",
     officialMediaSource: "https://www.drivedevilbiss.com.au/"
   },
   "LMS-012": {
     id: "LMS-012",
     slug: "pride-go-go-auto-fold",
-    localPath: "/images/products/pride-go-go-auto-fold.webp",
+    localPath: "",
     altText: "Pride Go-Go Auto-Fold Remote Electric Travel Scooter",
     officialMediaSource: "https://www.pridemobility.com/go-go-travel-mobility/"
   },
   "LMS-013": {
     id: "LMS-013",
     slug: "kymco-k-lite-f-auto-folding",
-    localPath: "/images/products/solax-genie-plus.webp",
+    localPath: "/images/products/kymco-k-lite-f-auto-folding.webp",
     altText: "Kymco K-Lite F Automatic Electric Folding Scooter",
     officialMediaSource: "https://www.kymco.com.au/"
   },
   "LMS-014": {
     id: "LMS-014",
     slug: "luggie-elite-automatic-electric-folding",
-    localPath: "/images/products/luggie-elite-fold.webp",
+    localPath: "/images/products/luggie-elite-automatic-electric-folding.webp",
     altText: "FreeRider Luggie Elite Automatic Electric Folding Travel Scooter",
     officialMediaSource: "https://luggiescooter.com/"
   },
   "LMS-015": {
     id: "LMS-015",
     slug: "luggie-standard-compact-folding",
-    localPath: "/images/products/luggie-elite-fold.webp",
+    localPath: "/images/products/luggie-standard-compact-folding.webp",
     altText: "FreeRider Luggie Standard Compact Folding Scooter",
     officialMediaSource: "https://luggiescooter.com/"
   },
   "LMS-016": {
     id: "LMS-016",
     slug: "luggie-classic-compact-folding-sla",
-    localPath: "/images/products/luggie-elite-fold.webp",
+    localPath: "/images/products/luggie-classic-compact-folding-sla.webp",
     altText: "FreeRider Luggie Classic Compact Folding Scooter SLA",
     officialMediaSource: "https://luggiescooter.com/"
   },
   "LMS-017": {
     id: "LMS-017",
     slug: "luggie-super-heavy-duty-folding",
-    localPath: "/images/products/luggie-elite-fold.webp",
+    localPath: "/images/products/luggie-super-heavy-duty-folding.webp",
     altText: "FreeRider Luggie Super Heavy-Duty 164kg Folding Scooter",
     officialMediaSource: "https://luggiescooter.com/"
   },
   "LMS-018": {
     id: "LMS-018",
     slug: "lifestyle-carbonlite-carbon-fibre-travel",
-    localPath: "/images/products/lifestyle-aerofold.webp",
+    localPath: "",
     altText: "Lifestyle CarbonLite Carbon Fibre Ultra-Light Travel Scooter",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-021": {
     id: "LMS-021",
     slug: "pride-go-go-ultra-x-4-wheel",
-    localPath: "/images/products/pride-go-go-ultra-x.webp",
+    localPath: "/images/products/pride-go-go-ultra-x-4-wheel.webp",
     altText: "Pride Go-Go Ultra X 4-Wheel Modular Disassembly Scooter",
-    officialMediaSource: "https://www.pridemobility.com/go-go-travel-mobility/go-go-ultrax-4-wheel/"
+    officialMediaSource: "https://www.pridemobility.com/go-go-travel-mobility/go-go-ultra-x-gen-3/"
   },
   "LMS-022": {
     id: "LMS-022",
     slug: "pride-go-go-ultra-x-3-wheel",
-    localPath: "/images/products/pride-go-go-ultra-x.webp",
+    localPath: "/images/products/pride-go-go-ultra-x-3-wheel.webp",
     altText: "Pride Go-Go Ultra X 3-Wheel Compact Disassembly Scooter",
     officialMediaSource: "https://www.pridemobility.com/"
   },
   "LMS-023": {
     id: "LMS-023",
     slug: "pride-go-go-elite-traveller-4-wheel",
-    localPath: "/images/products/pride-go-go-elite-traveller.webp",
+    localPath: "/images/products/pride-go-go-elite-traveller-4-wheel.webp",
     altText: "Pride Go-Go Elite Traveller 4-Wheel Micro-Travel Scooter",
-    officialMediaSource: "https://www.pridemobility.com/"
+    officialMediaSource: "https://www.pridemobility.com/go-go-travel-mobility/go-go-elite-traveller-2-4-wheel/"
   },
   "LMS-024": {
     id: "LMS-024",
     slug: "pride-go-go-elite-traveller-plus",
-    localPath: "/images/products/pride-go-go-elite-traveller.webp",
+    localPath: "/images/products/pride-go-go-elite-traveller-plus.webp",
     altText: "Pride Go-Go Elite Traveller Plus High-Torque Take-Apart Scooter",
-    officialMediaSource: "https://www.pridemobility.com/go-go-travel-mobility/go-go-elite-traveller-plus-4-wheel/"
+    officialMediaSource: "https://www.pridemobility.com/go-go-travel-mobility/go-go-elite-traveller-gen-3-platinum/"
   },
   "LMS-025": {
     id: "LMS-025",
     slug: "pride-go-go-sport-4-wheel",
-    localPath: "/images/products/pride-go-go-ultra-x.webp",
+    localPath: "/images/products/pride-go-go-sport-4-wheel.webp",
     altText: "Pride Go-Go Sport 4-Wheel High-Capacity Modular Scooter",
-    officialMediaSource: "https://www.pridemobility.com/"
+    officialMediaSource: "https://www.pridemobility.com/go-go-travel-mobility/go-go-sport-4-wheel/"
   },
   "LMS-026": {
     id: "LMS-026",
     slug: "pride-go-go-endurance-li-lithium",
-    localPath: "/images/products/pride-go-go-elite-traveller.webp",
+    localPath: "/images/products/pride-go-go-endurance-li-lithium.webp",
     altText: "Pride Go-Go Endurance Li Lithium Long-Range Modular Scooter",
-    officialMediaSource: "https://www.pridemobility.com/"
+    officialMediaSource: "https://www.pridemobility.com/go-go-travel-mobility/go-go-endurance-li/"
   },
   "LMS-027": {
     id: "LMS-027",
     slug: "pride-apex-rapid-cts-suspension",
-    localPath: "/images/products/pride-go-go-ultra-x.webp",
+    localPath: "/images/products/pride-apex-rapid-cts-suspension.webp",
     altText: "Pride Apex Rapid with CTS Comfort-Trac Suspension",
     officialMediaSource: "https://www.pridemobility.com/"
   },
   "LMS-028": {
     id: "LMS-028",
     slug: "pride-iride-ultra-lightweight-scooter",
-    localPath: "/images/products/lifestyle-aerofold.webp",
+    localPath: "/images/products/pride-iride-ultra-lightweight-scooter.webp",
     altText: "Pride iRide Ultra-Lightweight 14.5kg Folding Travel Scooter",
     officialMediaSource: "https://www.pridemobility.com/"
   },
   "LMS-029": {
     id: "LMS-029",
     slug: "invacare-colibri-4-wheel-take-apart",
-    localPath: "/images/products/invacare-colibri.webp",
+    localPath: "/images/products/invacare-colibri-4-wheel-take-apart.webp",
     altText: "Invacare Colibri 4-Wheel Modular Micro Travel Scooter",
     officialMediaSource: "https://www.invacare.com.au/micro-mobility/colibri"
   },
   "LMS-030": {
     id: "LMS-030",
     slug: "invacare-colibri-outdoor-large-wheels",
-    localPath: "/images/products/invacare-colibri.webp",
+    localPath: "/images/products/invacare-colibri-outdoor-large-wheels.webp",
     altText: "Invacare Colibri Outdoor Large-Wheel Modular Scooter",
     officialMediaSource: "https://www.invacare.com.au/"
   },
   "LMS-031": {
     id: "LMS-031",
     slug: "drive-scout-4-wheel-compact-travel",
-    localPath: "/images/products/pride-go-go-ultra-x.webp",
+    localPath: "/images/products/drive-scout-4-wheel-compact-travel.webp",
     altText: "Drive Scout 4-Wheel Compact Disassembly Travel Scooter",
     officialMediaSource: "https://www.drivedevilbiss.com.au/"
   },
   "LMS-032": {
     id: "LMS-032",
     slug: "drive-spitfire-ex2-modular-scooter",
-    localPath: "/images/products/pride-go-go-elite-traveller.webp",
+    localPath: "/images/products/drive-spitfire-ex2-modular-scooter.webp",
     altText: "Drive Spitfire EX2 4-Wheel Modular High-Capacity Scooter",
     officialMediaSource: "https://www.drivedevilbiss.com.au/"
   },
   "LMS-033": {
     id: "LMS-033",
     slug: "shoprider-dasher-4-compact",
-    localPath: "/images/products/shoprider-dasher-4.webp",
+    localPath: "/images/products/shoprider-dasher-4-compact.webp",
     altText: "Shoprider Dasher 4 Compact Modular Pavement Scooter",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
   "LMS-034": {
     id: "LMS-034",
     slug: "merits-roadster-4-wheel-take-apart",
-    localPath: "/images/products/pride-go-go-ultra-x.webp",
+    localPath: "/images/products/merits-roadster-4-wheel-take-apart.webp",
     altText: "Merits Roadster 4-Wheel Compact Take-Apart Scooter",
     officialMediaSource: "https://www.merits.com.au/"
   },
   "LMS-041": {
     id: "LMS-041",
     slug: "efoldi-lite-magnesium-alloy-folding",
-    localPath: "/images/products/efoldi-lite.webp",
+    localPath: "/images/products/efoldi-lite-magnesium-alloy-folding.webp",
     altText: "eFOLDi Lite Magnesium Alloy 15kg Flight-Approved Scooter",
     officialMediaSource: "https://efoldi.com/"
   },
   "LMS-042": {
     id: "LMS-042",
     slug: "efoldi-explorer-long-range-folding",
-    localPath: "/images/products/efoldi-lite.webp",
+    localPath: "/images/products/efoldi-explorer-long-range-folding.webp",
     altText: "eFOLDi Explorer Long-Range High-Clearance Folding Scooter",
     officialMediaSource: "https://efoldi.com/"
   },
   "LMS-043": {
     id: "LMS-043",
     slug: "supascoota-supalite-portable-travel",
-    localPath: "/images/products/lifestyle-aerofold.webp",
+    localPath: "/images/products/supascoota-supalite-portable-travel.webp",
     altText: "SupaScoota SupaLite 13.6kg Portable Travel Scooter",
-    officialMediaSource: "https://supascoota.com.au/"
+    officialMediaSource: "https://www.supamobility.com/product/supascoota-supalite-fio-mobility-scooter/"
   },
   "LMS-044": {
     id: "LMS-044",
     slug: "supascoota-microlite-ultra-lightweight",
-    localPath: "/images/products/lifestyle-aerofold.webp",
+    localPath: "/images/products/supascoota-microlite-ultra-lightweight.webp",
     altText: "SupaScoota MicroLite Monocoque Ultra-Lightweight Scooter",
-    officialMediaSource: "https://supascoota.com.au/"
+    officialMediaSource: "https://www.supamobility.com/"
   },
   "LMS-045": {
     id: "LMS-045",
     slug: "supascoota-spartan-heavy-duty-folding",
-    localPath: "/images/products/solax-transformer.webp",
+    localPath: "/images/products/supascoota-spartan-heavy-duty-folding.webp",
     altText: "SupaScoota Spartan Heavy-Duty 140kg Portable Folding Scooter",
-    officialMediaSource: "https://supascoota.com.au/"
+    officialMediaSource: "https://www.supamobility.com/product/supascoota-spartan-sp-sumo-sp-mobility-scooter/"
   },
   "LMS-046": {
     id: "LMS-046",
     slug: "tzora-easy-travel-elite-lightweight",
-    localPath: "/images/products/lifestyle-aerofold.webp",
+    localPath: "/images/products/tzora-easy-travel-elite-lightweight.webp",
     altText: "Tzora Easy Travel Elite Lightweight Foldable Scooter",
     officialMediaSource: "https://www.tzora.com/"
   },
   "LMS-047": {
     id: "LMS-047",
     slug: "tzora-titan-hummer-4-wheel-foldable",
-    localPath: "/images/products/solax-transformer.webp",
+    localPath: "/images/products/tzora-titan-hummer-4-wheel-foldable.webp",
     altText: "Tzora Titan Hummer 4-Wheel High-Capacity Foldable Scooter",
     officialMediaSource: "https://www.tzora.com/"
   },
   "LMS-048": {
     id: "LMS-048",
     slug: "moving-life-atto-transfolding-travel",
-    localPath: "/images/products/atto-moving-life.webp",
+    localPath: "/images/products/moving-life-atto-transfolding-travel.webp",
     altText: "Moving Life ATTO Transfolding Suitcase Travel Mobility Scooter",
-    officialMediaSource: "https://movinglife.com/products/atto-mobility-scooter"
+    officialMediaSource: "https://us.movinglife.com/products/atto"
   },
   "LMS-049": {
     id: "LMS-049",
     slug: "moving-life-atto-sport-travel-scooter",
-    localPath: "/images/products/atto-moving-life.webp",
+    localPath: "/images/products/moving-life-atto-sport-travel-scooter.webp",
     altText: "Moving Life ATTO Sport High-Performance Edition Travel Scooter",
-    officialMediaSource: "https://movinglife.com/"
+    officialMediaSource: "https://us.movinglife.com/products/atto-sport-mobility-scooter-with-armrest"
   },
   "LMS-050": {
     id: "LMS-050",
     slug: "whill-model-f-foldable-connected",
-    localPath: "/images/products/whill-model-f.webp",
+    localPath: "/images/products/whill-model-f-foldable-connected.webp",
     altText: "WHILL Model F Foldable Lightweight Connected Travel Scooter",
     officialMediaSource: "https://whill.inc/us/model-f"
   },
   "LMS-051": {
     id: "LMS-051",
     slug: "merits-yoga-lightweight-folding",
-    localPath: "/images/products/lifestyle-aerofold.webp",
+    localPath: "/images/products/merits-yoga-lightweight-folding.webp",
     altText: "Merits Yoga Lightweight Folding Travel Scooter with Armrests",
-    officialMediaSource: "https://www.merits.com.au/"
+    officialMediaSource: "local scooter-catalogue #101"
   },
   "LMS-052": {
     id: "LMS-052",

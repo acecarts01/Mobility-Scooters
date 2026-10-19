@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight, ArrowLeft } from 'lucide-react';
 import { formatAud, GST_FREE_LABEL } from '@/lib/utils';
+import ProductThumbnail from '@/src/components/shop/ProductThumbnail';
 
 export default function CategoryClient({ category, products }: { category: any, products: any[] }) {
   return (
@@ -34,18 +35,29 @@ export default function CategoryClient({ category, products }: { category: any, 
             >
               <Link href={`/shop/${product.categorySlug || product.category}/${product.slug}/`}>
                 <div className="product-frame aspect-[4/3] mb-4 relative overflow-hidden bg-accent/20 rounded-2xl flex items-center justify-center">
-                    <Image 
-                      src={product.images?.[0] || `/images/products/${product.slug}.webp`} 
-                      alt={product.name} 
-                      fill 
-                      className="object-contain p-2"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    />
-                    <div className="absolute top-2 left-2 flex flex-col gap-1">
-                      <span className="bg-primary text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
-                        GST-Free
-                      </span>
-                    </div>
+                    {product.images?.[0] ? (
+                      <>
+                        <Image
+                          src={product.images[0]}
+                          alt={product.name}
+                          fill
+                          className="object-contain p-2"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        />
+                        <div className="absolute top-2 left-2 flex flex-col gap-1">
+                          <span className="bg-primary text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                            GST-Free
+                          </span>
+                        </div>
+                      </>
+                    ) : (
+                      <ProductThumbnail
+                        alt={product.name}
+                        sku={product.sku}
+                        brand={product.brand}
+                        categorySlug={product.categorySlug || product.category}
+                      />
+                    )}
                 </div>
                 <h3 className="font-bold text-charcoal group-hover:text-primary transition-colors line-clamp-2 h-12">{product.name}</h3>
                 <div className="flex items-center justify-between mt-6 pt-4 border-t border-gray-50">
