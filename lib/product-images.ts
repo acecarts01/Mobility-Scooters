@@ -314,273 +314,273 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
   "LMS-052": {
     id: "LMS-052",
     slug: "shoprider-sovereign-4-classic-pavement",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/shoprider-sovereign-4-classic-pavement.webp",
     altText: "Shoprider Sovereign 4 Classic Daily Pavement Scooter",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
   "LMS-053": {
     id: "LMS-053",
     slug: "shoprider-deluxe-4-wheel-suburban",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/shoprider-deluxe-4-wheel-suburban.webp",
     altText: "Shoprider Deluxe 4-Wheel Suburban Pavement Scooter",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
   "LMS-054": {
     id: "LMS-054",
     slug: "shoprider-gk9-little-shopper-compact",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/shoprider-gk9-little-shopper-compact.webp",
     altText: "Shoprider GK-9 Little Shopper 4-Wheel Compact Scooter",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
   "LMS-055": {
     id: "LMS-055",
     slug: "pride-pathrider-9-4-wheel-compact",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Pride Pathrider 9 4-Wheel Compact Suburban Scooter",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
   "LMS-056": {
     id: "LMS-056",
     slug: "pride-pathrider-9-3-wheel-manoeuvrable",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Pride Pathrider 9 3-Wheel Ultra-Manoeuvrable Shopping Scooter",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
   "LMS-057": {
     id: "LMS-057",
     slug: "pride-go-go-sport-4-wheel-compact-cruiser",
-    localPath: "/images/products/pride-go-go-ultra-x.webp",
+    localPath: "/images/products/pride-go-go-sport-4-wheel.webp",
     altText: "Pride Go-Go Sport 4-Wheel High-Capacity Compact Cruiser",
     officialMediaSource: "https://www.pridemobility.com/"
   },
   "LMS-058": {
     id: "LMS-058",
     slug: "pride-apex-rapid-cts-comfort-suspension",
-    localPath: "/images/products/pride-go-go-ultra-x.webp",
+    localPath: "/images/products/pride-apex-rapid-cts-suspension.webp",
     altText: "Pride Apex Rapid CTS Comfort Suspension Pavement Scooter",
     officialMediaSource: "https://www.pridemobility.com/"
   },
   "LMS-059": {
     id: "LMS-059",
     slug: "metroglide-4-wheel-compact-daily",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "MetroGlide 4-Wheel Compact Daily Pavement Scooter",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/metroglide.webp"
   },
   "LMS-060": {
     id: "LMS-060",
     slug: "metroglide-urban-tourer-deluxe-shopper",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "MetroGlide Urban Tourer 4-Wheel Deluxe Shopper",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-061": {
     id: "LMS-061",
     slug: "afikim-afiscooter-c3-precision-urban",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/afikim-afiscooter-c3-precision-urban.webp",
     altText: "Afikim Afiscooter C3 3-Wheel Precision Steering Urban Scooter",
     officialMediaSource: "https://www.afiscooters.com/"
   },
   "LMS-062": {
     id: "LMS-062",
     slug: "afikim-afiscooter-c4-luxury-urban",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/afikim-afiscooter-c4-luxury-urban.webp",
     altText: "Afikim Afiscooter C4 4-Wheel Luxury Urban Pavement Scooter",
     officialMediaSource: "https://www.afiscooters.com/"
   },
   "LMS-063": {
     id: "LMS-063",
     slug: "invacare-leo-4-wheel-high-reliability",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/invacare-leo-4-wheel-high-reliability.webp",
     altText: "Invacare Leo 4-Wheel High-Reliability Pavement Scooter",
     officialMediaSource: "https://www.invacare.com.au/"
   },
   "LMS-064": {
     id: "LMS-064",
     slug: "invacare-leo-3-wheel-compact-radius",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Invacare Leo 3-Wheel Compact Radius Shopping Scooter",
     officialMediaSource: "https://www.invacare.com.au/"
   },
   "LMS-065": {
     id: "LMS-065",
     slug: "drive-medical-envoy-4-everyday-pavement",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/drive-medical-envoy-4-everyday-pavement.webp",
     altText: "Drive Medical Envoy 4 Modern Everyday Pavement Scooter",
     officialMediaSource: "https://www.drivedevilbiss.com.au/"
   },
   "LMS-066": {
     id: "LMS-066",
     slug: "drive-spitfire-scout-4-sport-compact",
-    localPath: "/images/products/pride-go-go-ultra-x.webp",
+    localPath: "",
     altText: "Drive Medical Spitfire Scout 4 Sport Compact Runabout",
     officialMediaSource: "https://www.drivedevilbiss.com.au/"
   },
   "LMS-067": {
     id: "LMS-067",
     slug: "kymco-super-4-compact-high-agility",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/kymco-super-4-compact-high-agility.webp",
     altText: "Kymco Super 4 Compact High-Agility Pavement Scooter",
     officialMediaSource: "https://kymco.com.au/"
   },
   "LMS-068": {
     id: "LMS-068",
     slug: "pride-pathrider-10-deluxe-long-range",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/pride-pathrider-10-deluxe-long-range.webp",
     altText: "Pride Pathrider 10 Deluxe Long-Range Pavement Scooter",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
   "LMS-069": {
     id: "LMS-069",
     slug: "pride-pathrider-10-3-wheel-touring",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/pride-pathrider-10-3-wheel-touring.webp",
     altText: "Pride Pathrider 10 3-Wheel Touring Mobility Scooter",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
   "LMS-070": {
     id: "LMS-070",
     slug: "pride-zero-turn-10-manoeuvrability-cruiser",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/pride-zero-turn-10-manoeuvrability-cruiser.webp",
     altText: "Pride Zero Turn 10 4-Wheel High-Manoeuvrability Cruiser",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
   "LMS-071": {
     id: "LMS-071",
     slug: "invacare-pegasus-pro-long-distance-touring",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/invacare-pegasus-pro-long-distance-touring.webp",
     altText: "Invacare Pegasus Pro Ergonomic Long-Distance Touring Scooter",
     officialMediaSource: "https://www.invacare.com.au/"
   },
   "LMS-072": {
     id: "LMS-072",
     slug: "invacare-pegasus-metro-high-safety",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/invacare-pegasus-metro-high-safety.webp",
     altText: "Invacare Pegasus Metro High-Safety Everyday Cruiser",
     officialMediaSource: "https://www.invacare.com.au/"
   },
   "LMS-073": {
     id: "LMS-073",
     slug: "invacare-orion-metro-advanced-suspension",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/invacare-orion-metro-advanced-suspension.webp",
     altText: "Invacare Orion Metro Advanced Suspension Suburban Cruiser",
     officialMediaSource: "https://www.invacare.com.au/"
   },
   "LMS-074": {
     id: "LMS-074",
     slug: "drive-envoy-4-plus-extended-range",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/drive-envoy-4-plus-extended-range.webp",
     altText: "Drive Medical Envoy 4 Plus Extended-Range Suspension Cruiser",
     officialMediaSource: "https://www.drivedevilbiss.com.au/"
   },
   "LMS-075": {
     id: "LMS-075",
     slug: "kymco-midi-xls-high-performance-cruiser",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/kymco-midi-xls-high-performance-cruiser.webp",
     altText: "Kymco Midi XLS High-Performance Ergonomic Pavement Cruiser",
     officialMediaSource: "https://kymco.com.au/"
   },
   "LMS-076": {
     id: "LMS-076",
     slug: "kymco-agility-comfort-high-torque",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/kymco-agility-comfort-high-torque.webp",
     altText: "Kymco Agility Comfort 10km/h High-Torque Pavement Scooter",
     officialMediaSource: "https://kymco.com.au/"
   },
   "LMS-077": {
     id: "LMS-077",
     slug: "shoprider-allrounder-4-wheel-suspension",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/shoprider-allrounder-4-wheel-suspension.webp",
     altText: "Shoprider AllRounder 4-Wheel Suspension Long-Distance Scooter",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
   "LMS-078": {
     id: "LMS-078",
     slug: "shoprider-puma-4-independent-suspension",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Shoprider Puma 4 Mid-Wheel Independent Suspension Cruiser",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
   "LMS-079": {
     id: "LMS-079",
     slug: "merits-pioneer-1-suburban-touring",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Merits Pioneer 1 4-Wheel Mid-Size Suburban Touring Scooter",
     officialMediaSource: "https://www.merits.com.au/"
   },
   "LMS-080": {
     id: "LMS-080",
     slug: "merits-pioneer-2-heavy-chassis-cruiser",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/merits-pioneer-2-heavy-chassis-cruiser.webp",
     altText: "Merits Pioneer 2 4-Wheel Heavy-Chassis Suburban Cruiser",
     officialMediaSource: "https://www.merits.com.au/"
   },
   "LMS-081": {
     id: "LMS-081",
     slug: "monarch-buzzaround-extreme-dual-suspension",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/monarch-buzzaround-extreme-dual-suspension.webp",
     altText: "Monarch Buzzaround Extreme 4-Wheel Dual Suspension Touring Scooter",
     officialMediaSource: "https://monarchmobility.com.au/"
   },
   "LMS-082": {
     id: "LMS-082",
     slug: "sterling-s425-high-visibility-touring",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/sterling-s425-high-visibility-touring.webp",
     altText: "Sterling S425 High-Visibility Pavement Touring Scooter",
     officialMediaSource: "https://www.sunrisemedical.com.au/"
   },
   "LMS-083": {
     id: "LMS-083",
     slug: "top-gun-classic-factory-sun-canopy",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/top-gun-classic-factory-sun-canopy.webp",
     altText: "Top Gun Classic 4-Wheel Suburban Scooter with Factory Sun Canopy",
     officialMediaSource: "https://topgunmobility.com.au/"
   },
   "LMS-084": {
     id: "LMS-084",
     slug: "top-gun-royal-4-deluxe-canopy",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/top-gun-royal-4-deluxe-canopy.webp",
     altText: "Top Gun Royal 4 Deluxe Pavement Runabout with Weather Canopy",
     officialMediaSource: "https://topgunmobility.com.au/"
   },
   "LMS-085": {
     id: "LMS-085",
     slug: "merits-pioneer-4-canopy-edition-protection",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/merits-pioneer-4-canopy-edition-protection.webp",
     altText: "Merits Pioneer 4 Canopy Edition with UV Sun & Rain Protection",
     officialMediaSource: "https://www.merits.com.au/"
   },
   "LMS-086": {
     id: "LMS-086",
     slug: "shoprider-rocky-4-urban-pavement-canopy",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/shoprider-rocky-4-urban-pavement-canopy.webp",
     altText: "Shoprider Rocky 4 Urban Pavement Cruiser with Hardtop Canopy",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
   "LMS-087": {
     id: "LMS-087",
     slug: "pride-pathrider-10-canopy-touring",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/pride-pathrider-10-canopy-touring.webp",
     altText: "Pride Pathrider 10 Canopy Touring Edition",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
   "LMS-088": {
     id: "LMS-088",
     slug: "invacare-leo-sun-shield-hardtop-shade",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/invacare-leo-sun-shield-hardtop-shade.webp",
     altText: "Invacare Leo Sun-Shield Urban Cruiser with Hardtop Shade",
     officialMediaSource: "https://www.invacare.com.au/"
   },
   "LMS-089": {
     id: "LMS-089",
     slug: "afikim-afiscooter-c4-all-weather-canopy",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/afikim-afiscooter-c4-all-weather-canopy.webp",
     altText: "Afikim Afiscooter C4 All-Weather Hard Canopy Edition",
     officialMediaSource: "https://www.afiscooters.com/"
   },
   "LMS-090": {
     id: "LMS-090",
     slug: "lifestyle-pavement-shield-all-weather-enclosed",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Lifestyle Pavement Shield All-Weather Enclosed Suburban Runabout",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
