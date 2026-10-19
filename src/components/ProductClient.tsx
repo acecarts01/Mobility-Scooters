@@ -2,7 +2,8 @@
 
 import { motion, AnimatePresence } from 'motion/react';
 import Link from 'next/link';
-import { 
+import Image from 'next/image';
+import {
   CheckCircle2, 
   ShieldCheck, 
   Truck, 
@@ -38,6 +39,7 @@ export default function ProductClient({
   const { addToCart } = useCart();
   const [added, setAdded] = useState(false);
   const [activeTab, setActiveTab] = useState<'description' | 'specs'>('description');
+  const [activeImage, setActiveImage] = useState(0);
 
   const related = relatedProducts && relatedProducts.length > 0
     ? relatedProducts
@@ -68,7 +70,8 @@ export default function ProductClient({
     { label: 'Clinical Warranty', value: `${product.specs.warrantyYears} Years Comprehensive Frame & Drivetrain` },
   ].filter(row => row.value !== '0 kg' && row.value !== '0 km' && row.value !== '0 Watts' && row.value !== '0 mm');
 
-  const primaryImage = product.images && product.images.length > 0 ? product.images[0] : undefined;
+  const galleryImages = product.images ?? [];
+  const primaryImage = galleryImages.length > 0 ? galleryImages[Math.min(activeImage, galleryImages.length - 1)] : undefined;
 
   return (
     <div className="min-h-screen bg-white pb-36 md:pb-0">
@@ -137,7 +140,29 @@ export default function ProductClient({
                 </div>
               )}
             </motion.div>
-            
+
+            {galleryImages.length > 1 && (
+              <ul className="grid grid-cols-3 gap-3" aria-label="Product photo gallery">
+                {galleryImages.map((src, i) => (
+                  <li key={src}>
+                    <button
+                      type="button"
+                      onClick={() => setActiveImage(i)}
+                      aria-label={`Show photo ${i + 1} of ${galleryImages.length}`}
+                      aria-current={i === activeImage}
+                      className={`block w-full aspect-[4/3] overflow-hidden rounded-2xl border-2 bg-white transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#007A78] ${
+                        i === activeImage ? 'border-[#007A78]' : 'border-[#1E252B]/10 hover:border-[#007A78]/50'
+                      }`}
+                    >
+                      <span className="relative block w-full h-full">
+                        <Image src={src} alt={`${product.name} - photo ${i + 1}`} fill sizes="(max-width: 1024px) 30vw, 160px" className="object-contain p-1" />
+                      </span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+
             {/* National Logistics & Dispatch Notice */}
             <div className="bg-[#F4F1EA] rounded-3xl p-6 border border-[#1E252B]/10 flex items-center gap-4">
               <div className="w-12 h-12 bg-[#007A78] rounded-2xl flex items-center justify-center text-white shadow-sm shrink-0">

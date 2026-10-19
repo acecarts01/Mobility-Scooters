@@ -20,7 +20,7 @@ export function ProductImage({
   const [hasError, setHasError] = useState(false);
   const config = CATALOG_IMAGE_REGISTRY[productId];
 
-  if (!config || hasError) {
+  if (!config || !config.localPath || hasError) {
     return (
       <div className={`flex flex-col items-center justify-center bg-[#F4F1EA] text-[#1E252B] p-4 rounded-lg border border-teal-100 ${className}`}>
         <svg className="w-12 h-12 text-[#007A78] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
