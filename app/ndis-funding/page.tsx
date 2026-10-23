@@ -247,7 +247,7 @@ export default function NDISFundingPage() {
                       type="text" 
                       name="productOfInterest" 
                       className="w-full px-4 py-3.5 rounded-xl border-2 border-[#1E252B]/15 focus:border-[#007A78] text-sm focus:outline-hidden"
-                      placeholder="e.g. AeroFold Remote Folding or Heavy Duty"
+                      placeholder="e.g. Solax Transformer Folding or Heavy Duty"
                     />
                   </div>
                 </div>

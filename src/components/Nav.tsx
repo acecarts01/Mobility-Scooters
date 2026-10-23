@@ -190,7 +190,7 @@ export default function Nav() {
                         onClick={() => setIsShopOpen(false)}
                         className="text-xs font-bold text-primary hover:underline flex items-center gap-1"
                       >
-                        All 177 Models <ChevronRight size={13} />
+                        All 141 Models <ChevronRight size={13} />
                       </Link>
                     </div>
 
@@ -330,7 +330,7 @@ export default function Nav() {
                                 Full Master Catalog
                               </span>
                               <span className="text-[9px] font-bold bg-primary text-white px-1.5 py-0.5 rounded">
-                                177 Items
+                                141 Items
                               </span>
                             </div>
                             <p className="text-[11px] text-charcoal/60 leading-snug mt-0.5">
@@ -479,7 +479,7 @@ export default function Nav() {
                       onClick={() => setIsMenuOpen(false)} 
                       className="p-3 bg-primary text-white rounded-xl text-xs font-bold text-center flex items-center justify-center"
                     >
-                      All 177 Models
+                      All 141 Models
                     </Link>
                   </motion.div>
                 )}

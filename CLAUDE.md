@@ -18,7 +18,7 @@
 
 ## Directory Layout
 - `src/types/index.ts`: Central data contracts (Product, Order, NDIS Submission).
-- `src/lib/catalog.ts`: Master catalog (177 products with full specs & query helpers; ramps/accessories have maxSpeedKmh 0).
+- `src/lib/catalog.ts`: Master catalog (141 products with full specs & query helpers; ramps/accessories have maxSpeedKmh 0).
 - `src/lib/schema.ts`: Schema.org JSON-LD graph (MedicalBusiness, Product, WebSite, FAQPage).
 - `src/app/robots.ts` & `src/app/sitemap.ts`: Next.js dynamic metadata routes.
 - `src/components/shop/ProductThumbnail.tsx`: Resilient fallback thumbnail component. Renders themed SVG schematics while awaiting photography; automatically loads `.webp` files when placed in `/public/images/products/`.

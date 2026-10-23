@@ -10,13 +10,6 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
   // =========================================================================
   // CATEGORY 1: PORTABLE & FOLDING MOBILITY SCOOTERS
   // =========================================================================
-  "LMS-001": {
-    id: "LMS-001",
-    slug: "lifestyle-aerofold-remote-auto-fold",
-    localPath: "",
-    altText: "Lifestyle AeroFold Remote Auto-Folding Electric Mobility Scooter",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/aerofold-main.webp"
-  },
   "LMS-002": {
     id: "LMS-002",
     slug: "solax-transformer-automatic-folding",
@@ -51,13 +44,6 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
     localPath: "/images/products/solax-mobie-plus-compact-folding.webp",
     altText: "Solax Mobie Plus Compact Folding Travel Scooter",
     officialMediaSource: "https://www.solaxmobility.com/media-photos-"
-  },
-  "LMS-007": {
-    id: "LMS-007",
-    slug: "lifestyle-metrofold-auto-folding",
-    localPath: "",
-    altText: "Lifestyle MetroFold Auto-Folding Boot Scooter",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-008": {
     id: "LMS-008",
@@ -128,13 +114,6 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
     localPath: "/images/products/luggie-super-heavy-duty-folding.webp",
     altText: "FreeRider Luggie Super Heavy-Duty 164kg Folding Scooter",
     officialMediaSource: "https://luggiescooter.com/"
-  },
-  "LMS-018": {
-    id: "LMS-018",
-    slug: "lifestyle-carbonlite-carbon-fibre-travel",
-    localPath: "",
-    altText: "Lifestyle CarbonLite Carbon Fibre Ultra-Light Travel Scooter",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-021": {
     id: "LMS-021",
@@ -360,20 +339,6 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
     altText: "Pride Apex Rapid CTS Comfort Suspension Pavement Scooter",
     officialMediaSource: "https://www.pridemobility.com/"
   },
-  "LMS-059": {
-    id: "LMS-059",
-    slug: "metroglide-4-wheel-compact-daily",
-    localPath: "",
-    altText: "MetroGlide 4-Wheel Compact Daily Pavement Scooter",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/metroglide.webp"
-  },
-  "LMS-060": {
-    id: "LMS-060",
-    slug: "metroglide-urban-tourer-deluxe-shopper",
-    localPath: "",
-    altText: "MetroGlide Urban Tourer 4-Wheel Deluxe Shopper",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
   "LMS-061": {
     id: "LMS-061",
     slug: "afikim-afiscooter-c3-precision-urban",
@@ -577,13 +542,6 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
     altText: "Afikim Afiscooter C4 All-Weather Hard Canopy Edition",
     officialMediaSource: "https://www.afiscooters.com/"
   },
-  "LMS-090": {
-    id: "LMS-090",
-    slug: "lifestyle-pavement-shield-all-weather-enclosed",
-    localPath: "",
-    altText: "Lifestyle Pavement Shield All-Weather Enclosed Suburban Runabout",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
   "LMS-091": {
     id: "LMS-091",
     slug: "pride-pathrider-140-xl-heavy-duty",
@@ -668,13 +626,6 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
     altText: "Monarch Royale 4 Heavy-Duty 180kg Bariatric Cruiser",
     officialMediaSource: "https://monarchmobility.com.au/"
   },
-  "LMS-103": {
-    id: "LMS-103",
-    slug: "lifestyle-bariatricpro-220kg-reinforced",
-    localPath: "",
-    altText: "Lifestyle BariatricPro 220kg Reinforced High-Torque Scooter",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
   "LMS-104": {
     id: "LMS-104",
     slug: "shoprider-889xlsbn-double-suspension-bariatric",
@@ -752,13 +703,6 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
     altText: "Shoprider AllRounder HD 4-Wheel Rural Explorer",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
-  "LMS-115": {
-    id: "LMS-115",
-    slug: "outback-cruiser-all-terrain-heavy-duty",
-    localPath: "",
-    altText: "Outback Cruiser Heavy-Duty All-Terrain Mobility Scooter",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/outback-cruiser.webp"
-  },
   "LMS-116": {
     id: "LMS-116",
     slug: "merits-regal-rough-terrain-heavy-cruiser",
@@ -829,13 +773,6 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
     altText: "Afikim Afiscooter S4 Hardtop Rain Canopy & Windscreen Edition",
     officialMediaSource: "https://www.afiscooters.com/"
   },
-  "LMS-126": {
-    id: "LMS-126",
-    slug: "lifestyle-weathermaster-enclosed-lockable-cabin",
-    localPath: "",
-    altText: "Lifestyle WeatherMaster Fully Enclosed Lockable Cabin Scooter",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
   "LMS-127": {
     id: "LMS-127",
     slug: "invacare-comet-alpine-hardtop-weather-shield",
@@ -863,55 +800,6 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
     localPath: "",
     altText: "Pride Baja Wrangler Enclosed All-Weather Expedition Shield",
     officialMediaSource: "https://www.pridemobility.com.au/"
-  },
-  "LMS-131": {
-    id: "LMS-131",
-    slug: "lifestyle-stepfree-2ft-single-fold-ramp",
-    localPath: "",
-    altText: "Lifestyle StepFree 2ft Single-Fold Aluminium Threshold Ramp",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-2ft.webp"
-  },
-  "LMS-132": {
-    id: "LMS-132",
-    slug: "lifestyle-stepfree-3ft-aluminium-ramp",
-    localPath: "",
-    altText: "Lifestyle StepFree 3ft Aluminium Portable Suitcase Ramp",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-3ft.webp"
-  },
-  "LMS-133": {
-    id: "LMS-133",
-    slug: "lifestyle-stepfree-4ft-anti-slip-folding-ramp",
-    localPath: "",
-    altText: "Lifestyle StepFree 4ft Anti-Slip Folding Suitcase Ramp",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-4ft.webp"
-  },
-  "LMS-134": {
-    id: "LMS-134",
-    slug: "lifestyle-stepfree-5ft-bifold-high-traction-ramp",
-    localPath: "",
-    altText: "Lifestyle StepFree 5ft Bi-Fold High-Traction Mobility Ramp",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-5ft.webp"
-  },
-  "LMS-135": {
-    id: "LMS-135",
-    slug: "lifestyle-stepfree-6ft-multifold-portable-ramp",
-    localPath: "",
-    altText: "Lifestyle StepFree 6ft Multi-Fold Portable Access Ramp",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-6ft.webp"
-  },
-  "LMS-136": {
-    id: "LMS-136",
-    slug: "lifestyle-stepfree-7ft-heavy-duty-trifold-ramp",
-    localPath: "",
-    altText: "Lifestyle StepFree 7ft Heavy-Duty Tri-Fold Wheelchair & Scooter Ramp",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-7ft.webp"
-  },
-  "LMS-137": {
-    id: "LMS-137",
-    slug: "lifestyle-stepfree-8ft-extended-multifold-ramp",
-    localPath: "",
-    altText: "Lifestyle StepFree 8ft Extended Multi-Fold Van & Step Ramp",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-8ft.webp"
   },
   "LMS-138": {
     id: "LMS-138",
@@ -997,62 +885,6 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
     altText: "Harmar AL500 Heavy-Duty Universal Platform Carrier",
     officialMediaSource: "https://www.harmar.com/"
   },
-  "LMS-150": {
-    id: "LMS-150",
-    slug: "lifestyle-hitchhauler-50mm-towbar-carrier",
-    localPath: "",
-    altText: "Lifestyle HitchHauler 50mm Towbar Mobility Scooter Carrier",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/carriers/hitchhauler.webp"
-  },
-  "LMS-151": {
-    id: "LMS-151",
-    slug: "lifestyle-hitchhauler-powered-electric-tilt-carrier",
-    localPath: "",
-    altText: "Lifestyle HitchHauler Powered 12V Electric Tilt Platform Carrier",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
-  "LMS-152": {
-    id: "LMS-152",
-    slug: "lifestyle-transittie-4-point-retractor-kit",
-    localPath: "",
-    altText: "Lifestyle TransitTie 4-Point Retractor Mobility Scooter Vehicle Tie-Down Kit",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
-  "LMS-153": {
-    id: "LMS-153",
-    slug: "lifestyle-safestep-rubber-threshold-ramp-25mm",
-    localPath: "",
-    altText: "Lifestyle SafeStep 1:8 Gradient Recycled Rubber Threshold Ramp 25mm",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
-  "LMS-154": {
-    id: "LMS-154",
-    slug: "lifestyle-safestep-rubber-threshold-ramp-50mm",
-    localPath: "",
-    altText: "Lifestyle SafeStep 1:8 Gradient Recycled Rubber Threshold Ramp 50mm",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
-  "LMS-155": {
-    id: "LMS-155",
-    slug: "lifestyle-safestep-rubber-threshold-ramp-75mm",
-    localPath: "",
-    altText: "Lifestyle SafeStep 1:8 Gradient Recycled Rubber Modular Doorway Ramp 75mm",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
-  "LMS-156": {
-    id: "LMS-156",
-    slug: "lifestyle-24v-10ah-iata-lithium-pack",
-    localPath: "",
-    altText: "Lifestyle 24V 10Ah IATA UN38.3 Flight Certified Lithium Battery",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/batteries/24v-10ah.webp"
-  },
-  "LMS-157": {
-    id: "LMS-157",
-    slug: "lifestyle-24v-15ah-long-range-lithium-upgrade",
-    localPath: "",
-    altText: "Lifestyle 24V 15Ah Long-Range Lithium-Ion Battery Upgrade",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
   "LMS-158": {
     id: "LMS-158",
     slug: "mk-battery-12v-34ah-deep-cycle-gel-pair",
@@ -1095,34 +927,6 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
     altText: "Pride 12V 55Ah High-Output Sealed Lead Acid Batteries Pair",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
-  "LMS-164": {
-    id: "LMS-164",
-    slug: "lifestyle-powercharge-24v-2a-charger",
-    localPath: "",
-    altText: "Lifestyle PowerCharge 24V 2A 3-Pin XLR Off-Board Smart Charger",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/chargers/powercharge-2a.webp"
-  },
-  "LMS-165": {
-    id: "LMS-165",
-    slug: "lifestyle-powercharge-24v-4a-regulated-fast-charger",
-    localPath: "",
-    altText: "Lifestyle PowerCharge 24V 4A Regulated Fast Charger",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
-  "LMS-166": {
-    id: "LMS-166",
-    slug: "lifestyle-powercharge-24v-5a-fan-cooled-charger",
-    localPath: "",
-    altText: "Lifestyle PowerCharge 24V 5A High-Output Fan-Cooled Smart Charger",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
-  "LMS-167": {
-    id: "LMS-167",
-    slug: "lifestyle-powercharge-24v-8a-commercial-charger",
-    localPath: "",
-    altText: "Lifestyle PowerCharge 24V 8A Heavy-Duty Commercial Scooter Charger",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
   "LMS-168": {
     id: "LMS-168",
     slug: "ctek-mxt-4-24v-precision-maintainer",
@@ -1143,62 +947,6 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
     localPath: "/images/products/invacare-24v-8a-heavy-duty-external-charger.webp",
     altText: "Invacare 24V 8A Heavy-Duty External Fan-Cooled Charger",
     officialMediaSource: "https://www.invacare.com.au/"
-  },
-  "LMS-171": {
-    id: "LMS-171",
-    slug: "outback-all-weather-hardtop-canopy",
-    localPath: "",
-    altText: "Outback Hardtop UV50+ Sun Canopy & Clear Roll-Down Shield",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/accessories/canopy-hardtop.webp"
-  },
-  "LMS-172": {
-    id: "LMS-172",
-    slug: "lifestyle-lockable-rear-cargo-trunk-35l",
-    localPath: "",
-    altText: "Lifestyle Lockable Rear Hard Shell Cargo Trunk 35L",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
-  "LMS-173": {
-    id: "LMS-173",
-    slug: "lifestyle-deluxe-dual-walking-cane-holder",
-    localPath: "",
-    altText: "Lifestyle Deluxe Dual Walking Stick Crutch Holder 25mm Mount",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/accessories/cane-holder.webp"
-  },
-  "LMS-174": {
-    id: "LMS-174",
-    slug: "lifestyle-oxygen-cylinder-rear-carrier-bracket",
-    localPath: "",
-    altText: "Lifestyle Oxygen Cylinder Heavy-Duty Rear Carrier Bracket",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
-  "LMS-175": {
-    id: "LMS-175",
-    slug: "lifestyle-rollator-walker-rear-carrier-rack",
-    localPath: "",
-    altText: "Lifestyle Rollator Walker Rear Scooter Hitch Carrier Rack",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
-  "LMS-176": {
-    id: "LMS-176",
-    slug: "lifestyle-heavy-duty-waterproof-scooter-rain-cover",
-    localPath: "",
-    altText: "Lifestyle Heavy-Duty UV50+ Waterproof Scooter Rain Cover (Large)",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
-  "LMS-177": {
-    id: "LMS-177",
-    slug: "lifestyle-fleece-lined-scooter-cosy-thermal-wrap",
-    localPath: "",
-    altText: "Lifestyle Fleece-Lined Scooter Cosy Thermal Leg Warmer Wrap",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
-  },
-  "LMS-178": {
-    id: "LMS-178",
-    slug: "lifestyle-universal-scooter-rear-view-safety-mirrors",
-    localPath: "",
-    altText: "Lifestyle Universal Scooter Rear View Safety Mirrors Pair",
-    officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-179": {
     id: "LMS-179",
