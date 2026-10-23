@@ -867,175 +867,175 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
   "LMS-131": {
     id: "LMS-131",
     slug: "lifestyle-stepfree-2ft-single-fold-ramp",
-    localPath: "/images/products/stepfree-3ft-ramp.webp",
+    localPath: "",
     altText: "Lifestyle StepFree 2ft Single-Fold Aluminium Threshold Ramp",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-2ft.webp"
   },
   "LMS-132": {
     id: "LMS-132",
     slug: "lifestyle-stepfree-3ft-aluminium-ramp",
-    localPath: "/images/products/stepfree-3ft-ramp.webp",
+    localPath: "",
     altText: "Lifestyle StepFree 3ft Aluminium Portable Suitcase Ramp",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-3ft.webp"
   },
   "LMS-133": {
     id: "LMS-133",
     slug: "lifestyle-stepfree-4ft-anti-slip-folding-ramp",
-    localPath: "/images/products/stepfree-3ft-ramp.webp",
+    localPath: "",
     altText: "Lifestyle StepFree 4ft Anti-Slip Folding Suitcase Ramp",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-4ft.webp"
   },
   "LMS-134": {
     id: "LMS-134",
     slug: "lifestyle-stepfree-5ft-bifold-high-traction-ramp",
-    localPath: "/images/products/stepfree-3ft-ramp.webp",
+    localPath: "",
     altText: "Lifestyle StepFree 5ft Bi-Fold High-Traction Mobility Ramp",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-5ft.webp"
   },
   "LMS-135": {
     id: "LMS-135",
     slug: "lifestyle-stepfree-6ft-multifold-portable-ramp",
-    localPath: "/images/products/stepfree-3ft-ramp.webp",
+    localPath: "",
     altText: "Lifestyle StepFree 6ft Multi-Fold Portable Access Ramp",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-6ft.webp"
   },
   "LMS-136": {
     id: "LMS-136",
     slug: "lifestyle-stepfree-7ft-heavy-duty-trifold-ramp",
-    localPath: "/images/products/stepfree-3ft-ramp.webp",
+    localPath: "",
     altText: "Lifestyle StepFree 7ft Heavy-Duty Tri-Fold Wheelchair & Scooter Ramp",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-7ft.webp"
   },
   "LMS-137": {
     id: "LMS-137",
     slug: "lifestyle-stepfree-8ft-extended-multifold-ramp",
-    localPath: "/images/products/stepfree-3ft-ramp.webp",
+    localPath: "",
     altText: "Lifestyle StepFree 8ft Extended Multi-Fold Van & Step Ramp",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/ramps/stepfree-8ft.webp"
   },
   "LMS-138": {
     id: "LMS-138",
     slug: "decpac-ebl-165cm-fibreglass-ultralight-ramp",
-    localPath: "/images/products/stepfree-3ft-ramp.webp",
+    localPath: "/images/products/decpac-ebl-165cm-fibreglass-ultralight-ramp.webp",
     altText: "Decpac EBL 165cm Fibreglass Ultralight Folding Ramp",
     officialMediaSource: "https://www.decpacramps.com/"
   },
   "LMS-139": {
     id: "LMS-139",
     slug: "roll-a-ramp-8ft-aluminium-modular-system",
-    localPath: "/images/products/stepfree-3ft-ramp.webp",
+    localPath: "/images/products/roll-a-ramp-8ft-aluminium-modular-system.webp",
     altText: "Roll-A-Ramp 8ft Aluminium Roll-Up Modular Access System",
     officialMediaSource: "https://www.rollaramp.com/"
   },
   "LMS-140": {
     id: "LMS-140",
     slug: "pvi-6ft-multifold-aluminium-utility-ramp",
-    localPath: "/images/products/stepfree-3ft-ramp.webp",
+    localPath: "",
     altText: "Prairie View Industries (PVI) 6ft Multifold Aluminium Utility Ramp",
     officialMediaSource: "https://www.pviramps.com/"
   },
   "LMS-141": {
     id: "LMS-141",
     slug: "autochair-smart-lifter-lm-40kg",
-    localPath: "/images/products/autochair-smart-lifter-lm.webp",
+    localPath: "/images/products/autochair-smart-lifter-lm-40kg.webp",
     altText: "Autochair Smart Lifter LM 40kg Mini Scooter Boot Hoist",
     officialMediaSource: "https://www.autochair.co.uk/"
   },
   "LMS-142": {
     id: "LMS-142",
     slug: "autochair-smart-lifter-lc-80kg",
-    localPath: "/images/products/autochair-smart-lifter-lm.webp",
+    localPath: "",
     altText: "Autochair Smart Lifter LC 80kg Medium Power Scooter Hoist",
     officialMediaSource: "https://www.autochair.co.uk/"
   },
   "LMS-143": {
     id: "LMS-143",
     slug: "autochair-smart-lifter-lp-150kg",
-    localPath: "/images/products/autochair-smart-lifter-lm.webp",
+    localPath: "/images/products/autochair-smart-lifter-lp-150kg.webp",
     altText: "Autochair Smart Lifter LP 150kg Heavy-Duty Bariatric Vehicle Hoist",
     officialMediaSource: "https://www.autochair.co.uk/"
   },
   "LMS-144": {
     id: "LMS-144",
     slug: "autochair-smart-lifter-lp-200kg",
-    localPath: "/images/products/autochair-smart-lifter-lm.webp",
+    localPath: "/images/products/autochair-smart-lifter-lp-200kg.webp",
     altText: "Autochair Smart Lifter LP 200kg Extreme Capacity Boot Hoist",
     officialMediaSource: "https://www.autochair.co.uk/"
   },
   "LMS-145": {
     id: "LMS-145",
     slug: "braunability-carolift-40-light-hoist",
-    localPath: "/images/products/autochair-smart-lifter-lm.webp",
+    localPath: "/images/products/braunability-carolift-40-light-hoist.webp",
     altText: "BraunAbility Carolift 40 Light Vehicle Wheelchair Hoist",
     officialMediaSource: "https://www.braunability.eu/"
   },
   "LMS-146": {
     id: "LMS-146",
     slug: "braunability-carolift-6900-high-capacity-lifter",
-    localPath: "/images/products/autochair-smart-lifter-lm.webp",
+    localPath: "/images/products/braunability-carolift-6900-high-capacity-lifter.webp",
     altText: "BraunAbility Carolift 6900 High-Capacity Swivel Arm Lifter",
     officialMediaSource: "https://www.braunability.eu/"
   },
   "LMS-147": {
     id: "LMS-147",
     slug: "harmar-al055-economy-inside-vehicle-lift",
-    localPath: "/images/products/autochair-smart-lifter-lm.webp",
+    localPath: "/images/products/harmar-al055-economy-inside-vehicle-lift.webp",
     altText: "Harmar AL055 Economy Inside-Vehicle Electric Lift",
     officialMediaSource: "https://www.harmar.com/"
   },
   "LMS-148": {
     id: "LMS-148",
     slug: "harmar-al100-universal-outside-platform-lift",
-    localPath: "/images/products/autochair-smart-lifter-lm.webp",
+    localPath: "/images/products/harmar-al100-universal-outside-platform-lift.webp",
     altText: "Harmar AL100 Universal Outside Power Scooter Platform Lift",
     officialMediaSource: "https://www.harmar.com/"
   },
   "LMS-149": {
     id: "LMS-149",
     slug: "harmar-al500-heavy-duty-universal-carrier",
-    localPath: "/images/products/autochair-smart-lifter-lm.webp",
+    localPath: "/images/products/harmar-al500-heavy-duty-universal-carrier.webp",
     altText: "Harmar AL500 Heavy-Duty Universal Platform Carrier",
     officialMediaSource: "https://www.harmar.com/"
   },
   "LMS-150": {
     id: "LMS-150",
     slug: "lifestyle-hitchhauler-50mm-towbar-carrier",
-    localPath: "/images/products/hitchhauler-50mm.webp",
+    localPath: "",
     altText: "Lifestyle HitchHauler 50mm Towbar Mobility Scooter Carrier",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/carriers/hitchhauler.webp"
   },
   "LMS-151": {
     id: "LMS-151",
     slug: "lifestyle-hitchhauler-powered-electric-tilt-carrier",
-    localPath: "/images/products/hitchhauler-50mm.webp",
+    localPath: "",
     altText: "Lifestyle HitchHauler Powered 12V Electric Tilt Platform Carrier",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-152": {
     id: "LMS-152",
     slug: "lifestyle-transittie-4-point-retractor-kit",
-    localPath: "/images/products/hitchhauler-50mm.webp",
+    localPath: "",
     altText: "Lifestyle TransitTie 4-Point Retractor Mobility Scooter Vehicle Tie-Down Kit",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-153": {
     id: "LMS-153",
     slug: "lifestyle-safestep-rubber-threshold-ramp-25mm",
-    localPath: "/images/products/stepfree-3ft-ramp.webp",
+    localPath: "",
     altText: "Lifestyle SafeStep 1:8 Gradient Recycled Rubber Threshold Ramp 25mm",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-154": {
     id: "LMS-154",
     slug: "lifestyle-safestep-rubber-threshold-ramp-50mm",
-    localPath: "/images/products/stepfree-3ft-ramp.webp",
+    localPath: "",
     altText: "Lifestyle SafeStep 1:8 Gradient Recycled Rubber Threshold Ramp 50mm",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-155": {
     id: "LMS-155",
     slug: "lifestyle-safestep-rubber-threshold-ramp-75mm",
-    localPath: "/images/products/stepfree-3ft-ramp.webp",
+    localPath: "",
     altText: "Lifestyle SafeStep 1:8 Gradient Recycled Rubber Modular Doorway Ramp 75mm",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
