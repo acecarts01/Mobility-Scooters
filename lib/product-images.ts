@@ -587,280 +587,280 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
   "LMS-091": {
     id: "LMS-091",
     slug: "pride-pathrider-140-xl-heavy-duty",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/pride-pathrider-140-xl-heavy-duty.webp",
     altText: "Pride Pathrider 140 XL High-Output Bariatric Cruiser",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
   "LMS-092": {
     id: "LMS-092",
     slug: "pride-maxima-bariatric-heavy-duty",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/pride-maxima-bariatric-heavy-duty.webp",
     altText: "Pride Maxima 4-Wheel 227kg Ultra-Heavy-Duty Bariatric Scooter",
     officialMediaSource: "https://www.pridemobility.com/"
   },
   "LMS-093": {
     id: "LMS-093",
     slug: "shoprider-rocky-4-heavy-duty",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/shoprider-rocky-4-heavy-duty.webp",
     altText: "Shoprider Rocky 4 Heavy Duty Double Suspension Bariatric Scooter",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
   "LMS-094": {
     id: "LMS-094",
     slug: "merits-silverado-extreme-heavy-duty",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/merits-silverado-extreme-heavy-duty.webp",
     altText: "Merits Silverado Extreme Heavy Duty 200kg Touring Scooter",
     officialMediaSource: "https://www.merits.com.au/"
   },
   "LMS-095": {
     id: "LMS-095",
     slug: "merits-pioneer-3-heavy-duty-high-capacity",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/merits-pioneer-3-heavy-duty-high-capacity.webp",
     altText: "Merits Pioneer 3 Heavy-Duty High-Capacity Mobility Scooter",
     officialMediaSource: "https://www.merits.com.au/"
   },
   "LMS-096": {
     id: "LMS-096",
     slug: "afikim-afiscooter-s4-heavy-duty",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/afikim-afiscooter-s4-heavy-duty.webp",
     altText: "Afikim Afiscooter S4 Heavy-Duty 200kg Luxury Cruiser",
     officialMediaSource: "https://www.afiscooters.com/"
   },
   "LMS-097": {
     id: "LMS-097",
     slug: "invacare-comet-alpine-plus-hill-climber",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/invacare-comet-alpine-plus-hill-climber.webp",
     altText: "Invacare Comet Alpine Plus Heavy-Duty Hill-Climbing Scooter",
     officialMediaSource: "https://www.invacare.com.au/"
   },
   "LMS-098": {
     id: "LMS-098",
     slug: "invacare-comet-ultra-bariatric-power",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/invacare-comet-ultra-bariatric-power.webp",
     altText: "Invacare Comet Ultra 220kg Bariatric Power Scooter",
     officialMediaSource: "https://www.invacare.com.au/"
   },
   "LMS-099": {
     id: "LMS-099",
     slug: "drive-cobra-gt4-heavy-duty-executive",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/drive-cobra-gt4-heavy-duty-executive.webp",
     altText: "Drive Medical Cobra GT4 Heavy-Duty 200kg Executive Cruiser",
     officialMediaSource: "https://www.drivedevilbiss.com.au/"
   },
   "LMS-100": {
     id: "LMS-100",
     slug: "kymco-maxi-xls-heavy-duty-touring",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/kymco-maxi-xls-heavy-duty-touring.webp",
     altText: "Kymco Maxi XLS 200kg Heavy-Duty Pavement Touring Scooter",
     officialMediaSource: "https://kymco.com.au/"
   },
   "LMS-101": {
     id: "LMS-101",
     slug: "top-gun-outback-high-capacity-rural",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Top Gun Outback 200kg High-Capacity Rural Mobility Scooter",
     officialMediaSource: "https://topgunmobility.com.au/"
   },
   "LMS-102": {
     id: "LMS-102",
     slug: "monarch-royale-4-heavy-duty-bariatric",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/monarch-royale-4-heavy-duty-bariatric.webp",
     altText: "Monarch Royale 4 Heavy-Duty 180kg Bariatric Cruiser",
     officialMediaSource: "https://monarchmobility.com.au/"
   },
   "LMS-103": {
     id: "LMS-103",
     slug: "lifestyle-bariatricpro-220kg-reinforced",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Lifestyle BariatricPro 220kg Reinforced High-Torque Scooter",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-104": {
     id: "LMS-104",
     slug: "shoprider-889xlsbn-double-suspension-bariatric",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/shoprider-889xlsbn-double-suspension-bariatric.webp",
     altText: "Shoprider 889XLSBN High-Output Double Suspension Bariatric",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
   "LMS-105": {
     id: "LMS-105",
     slug: "pride-baja-bandit-off-road-trail",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/pride-baja-bandit-off-road-trail.webp",
     altText: "Pride Baja Bandit 4-Wheel Off-Road Suspension Trail Scooter",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
   "LMS-106": {
     id: "LMS-106",
     slug: "pride-baja-wrangler-2-extreme-outdoor",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/pride-baja-wrangler-2-extreme-outdoor.webp",
     altText: "Pride Baja Wrangler 2 Extreme Outdoor Dual-Motor Scooter",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
   "LMS-107": {
     id: "LMS-107",
     slug: "pride-ranger-all-terrain-extreme",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/pride-ranger-all-terrain-extreme.webp",
     altText: "Pride Ranger 4WD Dual-Motor Extreme Outdoor Cruiser",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
   "LMS-108": {
     id: "LMS-108",
     slug: "heartway-vita-monster-all-terrain",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/heartway-vita-monster-all-terrain.webp",
     altText: "Heartway Vita Monster 900W High-Torque 4WD-Style Trail Explorer",
     officialMediaSource: "https://www.heartway.com.tw/"
   },
   "LMS-109": {
     id: "LMS-109",
     slug: "horizon-mayan-ac-all-terrain-off-road",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/horizon-mayan-ac-all-terrain-off-road.webp",
     altText: "Horizon Mayan AC All-Terrain Extreme Off-Road Scooter",
     officialMediaSource: "https://www.horizonmobility.com/"
   },
   "LMS-110": {
     id: "LMS-110",
     slug: "tga-vita-x-all-terrain-suspension-explorer",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/tga-vita-x-all-terrain-suspension-explorer.webp",
     altText: "TGA Vita X Heavy-Duty All-Terrain Suspension Explorer",
     officialMediaSource: "https://www.tgamobility.co.uk/"
   },
   "LMS-111": {
     id: "LMS-111",
     slug: "afikim-afiscooter-s3-rough-terrain-manoeuvrable",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/afikim-afiscooter-s3-rough-terrain-manoeuvrable.webp",
     altText: "Afikim Afiscooter S3 3-Wheel Rough-Terrain High-Manoeuvrability Scooter",
     officialMediaSource: "https://www.afiscooters.com/"
   },
   "LMS-112": {
     id: "LMS-112",
     slug: "afikim-afiscooter-s4-wide-wheel-farm-golf",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/afikim-afiscooter-s4-wide-wheel-farm-golf.webp",
     altText: "Afikim Afiscooter S4 Wide-Wheel Farm & Golf Course Explorer",
     officialMediaSource: "https://www.afiscooters.com/"
   },
   "LMS-113": {
     id: "LMS-113",
     slug: "shoprider-landcruiser-889sl-rough-pathway",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/shoprider-landcruiser-889sl-rough-pathway.webp",
     altText: "Shoprider LandCruiser 889SL Extreme Rough-Pathway Scooter",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
   "LMS-114": {
     id: "LMS-114",
     slug: "shoprider-allrounder-hd-rural-explorer",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/shoprider-allrounder-hd-rural-explorer.webp",
     altText: "Shoprider AllRounder HD 4-Wheel Rural Explorer",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
   "LMS-115": {
     id: "LMS-115",
     slug: "outback-cruiser-all-terrain-heavy-duty",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Outback Cruiser Heavy-Duty All-Terrain Mobility Scooter",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/outback-cruiser.webp"
   },
   "LMS-116": {
     id: "LMS-116",
     slug: "merits-regal-rough-terrain-heavy-cruiser",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/merits-regal-rough-terrain-heavy-cruiser.webp",
     altText: "Merits Regal 4-Wheel Rough-Terrain Heavy Cruiser",
     officialMediaSource: "https://www.merits.com.au/"
   },
   "LMS-117": {
     id: "LMS-117",
     slug: "top-gun-boss-extreme-off-road",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Top Gun Boss Extreme Dual-Suspension Off-Road Cruiser",
     officialMediaSource: "https://topgunmobility.com.au/"
   },
   "LMS-118": {
     id: "LMS-118",
     slug: "kymco-foru-agility-all-terrain-long-distance",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Kymco ForU Agility All-Terrain Long-Distance Scooter",
     officialMediaSource: "https://kymco.com.au/"
   },
   "LMS-119": {
     id: "LMS-119",
     slug: "pride-pursuit-2-heavy-duty-wilderness",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/pride-pursuit-2-heavy-duty-wilderness.webp",
     altText: "Pride Pursuit 2 Heavy-Duty Dual 12V 100Ah Wilderness Cruiser",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
   "LMS-120": {
     id: "LMS-120",
     slug: "drive-medical-king-cobra-luxury-explorer",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/drive-medical-king-cobra-luxury-explorer.webp",
     altText: "Drive Medical King Cobra All-Terrain Luxury Explorer",
     officialMediaSource: "https://www.drivedevilbiss.com.au/"
   },
   "LMS-121": {
     id: "LMS-121",
     slug: "top-gun-safari-hardtop-enclosed-cabin",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/top-gun-safari-hardtop-enclosed-cabin.webp",
     altText: "Top Gun Safari Integrated Hardtop Enclosed Cabin Scooter",
     officialMediaSource: "https://topgunmobility.com.au/"
   },
   "LMS-122": {
     id: "LMS-122",
     slug: "cabin-car-mk2e-fully-enclosed-luxury",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/cabin-car-mk2e-fully-enclosed-luxury.webp",
     altText: "Cabin Car Mk2e Fully Enclosed Luxury Electric Mobility Scooter",
     officialMediaSource: "https://scooterpac.com/"
   },
   "LMS-123": {
     id: "LMS-123",
     slug: "scooterpac-cabin-car-plus-heated-enclosure",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/scooterpac-cabin-car-plus-heated-enclosure.webp",
     altText: "Scooterpac Cabin Car Plus Dual-Motor Heated Enclosure Scooter",
     officialMediaSource: "https://scooterpac.com/"
   },
   "LMS-124": {
     id: "LMS-124",
     slug: "shoprider-rain-canopy-deluxe-all-weather",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/shoprider-rain-canopy-deluxe-all-weather.webp",
     altText: "Shoprider Rain Canopy Deluxe All-Weather Heavy-Duty Scooter",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
   "LMS-125": {
     id: "LMS-125",
     slug: "afikim-afiscooter-s4-hardtop-rain-canopy",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/afikim-afiscooter-s4-hardtop-rain-canopy.webp",
     altText: "Afikim Afiscooter S4 Hardtop Rain Canopy & Windscreen Edition",
     officialMediaSource: "https://www.afiscooters.com/"
   },
   "LMS-126": {
     id: "LMS-126",
     slug: "lifestyle-weathermaster-enclosed-lockable-cabin",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Lifestyle WeatherMaster Fully Enclosed Lockable Cabin Scooter",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-127": {
     id: "LMS-127",
     slug: "invacare-comet-alpine-hardtop-weather-shield",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/invacare-comet-alpine-hardtop-weather-shield.webp",
     altText: "Invacare Comet Alpine Hardtop Enclosed Weather Shield Scooter",
     officialMediaSource: "https://www.invacare.com.au/"
   },
   "LMS-128": {
     id: "LMS-128",
     slug: "merits-silverado-enclosed-cabin-all-season",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Merits Silverado Enclosed Cabin All-Season Touring Scooter",
     officialMediaSource: "https://www.merits.com.au/"
   },
   "LMS-129": {
     id: "LMS-129",
     slug: "top-gun-cruiser-deluxe-enclosed-hardtop",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Top Gun Cruiser Deluxe Enclosed Hardtop Weather Protected Scooter",
     officialMediaSource: "https://topgunmobility.com.au/"
   },
   "LMS-130": {
     id: "LMS-130",
     slug: "pride-baja-wrangler-enclosed-all-weather-shield",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Pride Baja Wrangler Enclosed All-Weather Expedition Shield",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
