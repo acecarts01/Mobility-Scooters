@@ -1042,210 +1042,210 @@ export const CATALOG_IMAGE_REGISTRY: Record<string, ProductImageConfig> = {
   "LMS-156": {
     id: "LMS-156",
     slug: "lifestyle-24v-10ah-iata-lithium-pack",
-    localPath: "/images/products/lifestyle-aerofold.webp",
+    localPath: "",
     altText: "Lifestyle 24V 10Ah IATA UN38.3 Flight Certified Lithium Battery",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/batteries/24v-10ah.webp"
   },
   "LMS-157": {
     id: "LMS-157",
     slug: "lifestyle-24v-15ah-long-range-lithium-upgrade",
-    localPath: "/images/products/lifestyle-aerofold.webp",
+    localPath: "",
     altText: "Lifestyle 24V 15Ah Long-Range Lithium-Ion Battery Upgrade",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-158": {
     id: "LMS-158",
     slug: "mk-battery-12v-34ah-deep-cycle-gel-pair",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/mk-battery-12v-34ah-deep-cycle-gel-pair.webp",
     altText: "MK Battery 12V 34Ah Deep-Cycle Gel Mobility Batteries Pair",
     officialMediaSource: "https://www.mkbattery.com/"
   },
   "LMS-159": {
     id: "LMS-159",
     slug: "mk-battery-12v-50ah-heavy-duty-gel-pair",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/mk-battery-12v-50ah-heavy-duty-gel-pair.webp",
     altText: "MK Battery 12V 50Ah Heavy-Duty Gel Mobility Batteries Pair",
     officialMediaSource: "https://www.mkbattery.com/"
   },
   "LMS-160": {
     id: "LMS-160",
     slug: "mk-battery-12v-75ah-high-capacity-agm-pair",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/mk-battery-12v-75ah-high-capacity-agm-pair.webp",
     altText: "MK Battery 12V 75Ah High-Capacity AGM Mobility Batteries Pair",
     officialMediaSource: "https://www.mkbattery.com/"
   },
   "LMS-161": {
     id: "LMS-161",
     slug: "invacare-12v-40ah-premium-agm-pair",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Invacare 12V 40Ah Premium AGM Mobility Scooter Battery Pair",
     officialMediaSource: "https://www.invacare.com.au/"
   },
   "LMS-162": {
     id: "LMS-162",
     slug: "shoprider-12v-75ah-industrial-deep-cycle-pair",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Shoprider 12V 75Ah Industrial Deep-Cycle Battery Replacement Pair",
     officialMediaSource: "https://www.shoprider.com.au/"
   },
   "LMS-163": {
     id: "LMS-163",
     slug: "pride-12v-55ah-high-output-sealed-pair",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Pride 12V 55Ah High-Output Sealed Lead Acid Batteries Pair",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
   "LMS-164": {
     id: "LMS-164",
     slug: "lifestyle-powercharge-24v-2a-charger",
-    localPath: "/images/products/lifestyle-aerofold.webp",
+    localPath: "",
     altText: "Lifestyle PowerCharge 24V 2A 3-Pin XLR Off-Board Smart Charger",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/chargers/powercharge-2a.webp"
   },
   "LMS-165": {
     id: "LMS-165",
     slug: "lifestyle-powercharge-24v-4a-regulated-fast-charger",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Lifestyle PowerCharge 24V 4A Regulated Fast Charger",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-166": {
     id: "LMS-166",
     slug: "lifestyle-powercharge-24v-5a-fan-cooled-charger",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Lifestyle PowerCharge 24V 5A High-Output Fan-Cooled Smart Charger",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-167": {
     id: "LMS-167",
     slug: "lifestyle-powercharge-24v-8a-commercial-charger",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Lifestyle PowerCharge 24V 8A Heavy-Duty Commercial Scooter Charger",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-168": {
     id: "LMS-168",
     slug: "ctek-mxt-4-24v-precision-maintainer",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/ctek-mxt-4-24v-precision-maintainer.webp",
     altText: "CTEK MXT 4.0 24V 8-Step Automatic Battery Charger & Maintainer",
     officialMediaSource: "https://www.ctek.com/"
   },
   "LMS-169": {
     id: "LMS-169",
     slug: "pride-mobility-24v-35a-off-board-charger",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Pride Mobility 24V 3.5A Off-Board XLR Charging Assembly",
     officialMediaSource: "https://www.pridemobility.com.au/"
   },
   "LMS-170": {
     id: "LMS-170",
     slug: "invacare-24v-8a-heavy-duty-external-charger",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/invacare-24v-8a-heavy-duty-external-charger.webp",
     altText: "Invacare 24V 8A Heavy-Duty External Fan-Cooled Charger",
     officialMediaSource: "https://www.invacare.com.au/"
   },
   "LMS-171": {
     id: "LMS-171",
     slug: "outback-all-weather-hardtop-canopy",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Outback Hardtop UV50+ Sun Canopy & Clear Roll-Down Shield",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/accessories/canopy-hardtop.webp"
   },
   "LMS-172": {
     id: "LMS-172",
     slug: "lifestyle-lockable-rear-cargo-trunk-35l",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Lifestyle Lockable Rear Hard Shell Cargo Trunk 35L",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-173": {
     id: "LMS-173",
     slug: "lifestyle-deluxe-dual-walking-cane-holder",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Lifestyle Deluxe Dual Walking Stick Crutch Holder 25mm Mount",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/accessories/cane-holder.webp"
   },
   "LMS-174": {
     id: "LMS-174",
     slug: "lifestyle-oxygen-cylinder-rear-carrier-bracket",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Lifestyle Oxygen Cylinder Heavy-Duty Rear Carrier Bracket",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-175": {
     id: "LMS-175",
     slug: "lifestyle-rollator-walker-rear-carrier-rack",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Lifestyle Rollator Walker Rear Scooter Hitch Carrier Rack",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-176": {
     id: "LMS-176",
     slug: "lifestyle-heavy-duty-waterproof-scooter-rain-cover",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "",
     altText: "Lifestyle Heavy-Duty UV50+ Waterproof Scooter Rain Cover (Large)",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-177": {
     id: "LMS-177",
     slug: "lifestyle-fleece-lined-scooter-cosy-thermal-wrap",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Lifestyle Fleece-Lined Scooter Cosy Thermal Leg Warmer Wrap",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-178": {
     id: "LMS-178",
     slug: "lifestyle-universal-scooter-rear-view-safety-mirrors",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Lifestyle Universal Scooter Rear View Safety Mirrors Pair",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-179": {
     id: "LMS-179",
     slug: "solid-pu-puncture-proof-tyre-280-250-4",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/solid-pu-puncture-proof-tyre-280-250-4.webp",
     altText: "Puncture Proof Solid PU Foam Infill Drive Tyre 2.80/2.50-4",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/assets/parts/tyre-solid-280.webp"
   },
   "LMS-180": {
     id: "LMS-180",
     slug: "solid-pu-flat-free-300-4-low-marking-tyre",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/solid-pu-flat-free-300-4-low-marking-tyre.webp",
     altText: "Solid PU Flat-Free 3.00-4 Low-Marking Grey Scooter Tyre",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-181": {
     id: "LMS-181",
     slug: "solid-pu-flat-free-300-8-heavy-duty-drive-tyre",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/solid-pu-flat-free-300-8-heavy-duty-drive-tyre.webp",
     altText: "Solid PU Flat-Free 3.00-8 Heavy-Duty Pavement Drive Tyre",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-182": {
     id: "LMS-182",
     slug: "pneumatic-inner-tube-90-degree-valve-280-250-4",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/pneumatic-inner-tube-90-degree-valve-280-250-4.webp",
     altText: "Heavy-Duty Pneumatic Inner Tube with 90-Degree Bent Metal Valve",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-183": {
     id: "LMS-183",
     slug: "heavy-duty-pneumatic-inner-tube-300-4-angled-valve",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "",
     altText: "Heavy-Duty Pneumatic Inner Tube 3.00-4 with Angled Brass Valve",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-184": {
     id: "LMS-184",
     slug: "heavy-duty-inner-tube-400-5-touring-scooter",
-    localPath: "/images/products/outback-cruiser-hd.webp",
+    localPath: "/images/products/heavy-duty-inner-tube-400-5-touring-scooter.webp",
     altText: "Heavy-Duty Pneumatic Inner Tube 4.00-5 Large Touring Scooter",
     officialMediaSource: "https://lifestylemobilityscooters.com.au/"
   },
   "LMS-185": {
     id: "LMS-185",
     slug: "slime-heavy-duty-puncture-sealant-16oz",
-    localPath: "/images/products/metroglide-daily-shopper.webp",
+    localPath: "/images/products/slime-heavy-duty-puncture-sealant-16oz.webp",
     altText: "Slime Heavy-Duty Puncture Sealant 16oz Tube & Tyre Treatment",
     officialMediaSource: "https://slime.com/"
   }
