@@ -270,7 +270,7 @@ export default function HomeClient() {
                             </div>
                             <div>
                                <p className="text-[10px] font-bold text-charcoal/40 uppercase">Top Match</p>
-                               <p className="text-xs font-bold">AeroFold™ Travel</p>
+                               <p className="text-xs font-bold">Solax Transformer</p>
                             </div>
                          </div>
                       </motion.div>

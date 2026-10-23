@@ -79,8 +79,8 @@ const INITIAL_INQUIRIES: Inquiry[] = [
     category: "Travel & Flight",
     date: "Yesterday at 04:30 PM",
     status: "new",
-    subject: "Qantas Airline Compliance for AeroFold Scooter",
-    message: "We are booked on a Qantas flight from Melbourne to Perth next month. Can you confirm if the AeroFold Lithium battery complies with CASA and IATA regulations for carry-on? Do you provide a UN 38.3 test certificate I can show check-in staff?",
+    subject: "Qantas Airline Compliance for Solax Transformer Scooter",
+    message: "We are booked on a Qantas flight from Melbourne to Perth next month. Can you confirm if the Solax Transformer lithium battery complies with CASA and IATA regulations for carry-on? Do you provide a UN 38.3 test certificate I can show check-in staff?",
     defaultTemplate: "airline"
   },
   {
@@ -106,7 +106,7 @@ const INITIAL_INQUIRIES: Inquiry[] = [
     date: "16 Oct 2024",
     status: "replied",
     subject: "GST Exemption Certificate Confirmation",
-    message: "My accountant requested confirmation that the MetroGlide 4-wheel scooter we ordered is completely exempt from GST. Could you please provide the statutory reference for our tax records?",
+    message: "My accountant requested confirmation that the Shoprider Sovereign 4-wheel scooter we ordered is completely exempt from GST. Could you please provide the statutory reference for our tax records?",
     defaultTemplate: "gst_free"
   },
   {
@@ -347,7 +347,7 @@ const TEMPLATES: Record<string, TemplateConfig> = {
 
 <div style="background-color: #F4F1EA; border-left: 4px solid #007A78; padding: 14px 18px; margin: 18px 0; border-radius: 0 8px 8px 0; font-size: 14px; color: #1E252B;">
   <strong>CASA / IATA Dangerous Goods Guidelines:</strong><br>
-  Our portable travel scooters (including the AeroFold and TravelLite series) utilize certified <strong>UN 38.3 Lithium LiFePO4 battery packs</strong> engineered specifically for commercial air travel compliance.
+  Our portable travel scooters (including the Solax Transformer and Genie series) utilize certified <strong>UN 38.3 Lithium LiFePO4 battery packs</strong> engineered specifically for commercial air travel compliance.
 </div>
 
 <h3 style="color: #007A78; font-size: 17px; margin: 20px 0 8px;">Airline Check-In Instructions:</h3>
